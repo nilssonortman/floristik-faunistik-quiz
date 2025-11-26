@@ -13,6 +13,9 @@ const CONFIG = {
 
   // License codes used by iNat (lowercase). We'll accept these:
   ALLOWED_LICENSES: ["cc0", "cc-by", "cc-by-nc"],
+
+  // How we define "broad groups" for distractors
+  GROUP_RANK_PRIORITY: ["class", "phylum", "division"],
 };
 
 // ==== STATE =============================================================
@@ -158,7 +161,8 @@ function filterAndTransform(rawObs) {
       scientificName,
       swedishName: taxon.preferred_common_name || null, // Swedish if available (locale=sv)
       genusName,
-      familyName: null, // to be filled in by enrichWithFamilies
+      familyName: null,     // to be filled in by enrichWithTaxaData
+      broadGroup: null,     // ditto: e.g. "Insecta", "Bryophyta"
       observer: (o.user && o.user.login) || "unknown",
       licenseCode: photo.license_code || o.license_code || null,
       obsUrl: `https://www.inaturalist.org/observations/${o.id}`,
@@ -168,8 +172,8 @@ function filterAndTransform(rawObs) {
   return result;
 }
 
-// Enrich observations with family name via /v1/taxa
-async function enrichWithFamilies(obsList) {
+// Enrich observations with family and broadGroup via /v1/taxa
+async function enrichWithTaxaData(obsList) {
   const ids = [
     ...new Set(
       obsList
@@ -181,6 +185,7 @@ async function enrichWithFamilies(obsList) {
   if (!ids.length) return;
 
   const familyMap = new Map();
+  const broadGroupMap = new Map();
   const chunkSize = 30;
 
   for (let i = 0; i < ids.length; i += chunkSize) {
@@ -196,7 +201,9 @@ async function enrichWithFamilies(obsList) {
 
       for (const t of taxa) {
         let famName = null;
+        let broadGroup = null;
 
+        // Family name
         if (t.rank === "family") {
           famName = t.name;
         } else if (Array.isArray(t.ancestors)) {
@@ -204,30 +211,49 @@ async function enrichWithFamilies(obsList) {
           if (fam) famName = fam.name;
         }
 
+        // Broad group: first available rank from priority list
+        if (Array.isArray(t.ancestors)) {
+          for (const rank of CONFIG.GROUP_RANK_PRIORITY) {
+            const anc = t.ancestors.find((a) => a.rank === rank);
+            if (anc) {
+              broadGroup = anc.name;
+              break;
+            }
+          }
+        }
+
         if (famName) {
           familyMap.set(t.id, famName);
         }
+        if (broadGroup) {
+          broadGroupMap.set(t.id, broadGroup);
+        }
       }
     } catch (err) {
-      console.warn("Error enriching families chunk:", err);
+      console.warn("Error enriching taxa chunk:", err);
     }
   }
 
   obsList.forEach((o) => {
     o.familyName = familyMap.get(o.taxonId) || null;
+    o.broadGroup = broadGroupMap.get(o.taxonId) || null;
   });
 }
 
 // Build quiz questions for the current level (species/genus/family)
 function buildQuizQuestions(obsList) {
   // Collapse to unique groups for this level
-  const groupsMap = new Map(); // groupLabel -> { label, obs }
+  const groupsMap = new Map(); // groupLabel -> { label, obs, broadGroup }
 
   for (const obs of obsList) {
     const label = getGroupLabelForObs(obs);
     if (!label) continue; // e.g. no family info yet
     if (!groupsMap.has(label)) {
-      groupsMap.set(label, { label, obs });
+      groupsMap.set(label, {
+        label,
+        obs,
+        broadGroup: obs.broadGroup || null,
+      });
     }
   }
 
@@ -241,9 +267,23 @@ function buildQuizQuestions(obsList) {
 
   for (const g of chosenGroups) {
     const correctObs = g.obs;
-    const otherGroups = groups.filter((x) => x.label !== g.label);
+    const correctBroad = g.broadGroup;
+
+    // Candidate distractors: same broadGroup
+    let candidateGroups = groups.filter(
+      (x) =>
+        x.label !== g.label &&
+        correctBroad &&
+        x.broadGroup === correctBroad
+    );
+
+    // Fallback: if too few, ignore broadGroup restriction
+    if (candidateGroups.length < CONFIG.OPTIONS_PER_QUESTION - 1) {
+      candidateGroups = groups.filter((x) => x.label !== g.label);
+    }
+
     const distractorGroups = pickRandomSubset(
-      otherGroups,
+      candidateGroups,
       CONFIG.OPTIONS_PER_QUESTION - 1
     );
 
@@ -400,11 +440,11 @@ async function initQuiz() {
       return;
     }
 
-    // Enrich with family names (used for family-level quizzes)
+    // Enrich with family + broadGroup (used for family mode & smart distractors)
     try {
-      await enrichWithFamilies(filtered);
+      await enrichWithTaxaData(filtered);
     } catch (err) {
-      console.warn("Family enrichment failed, continuing without:", err);
+      console.warn("Taxa enrichment failed, continuing without:", err);
     }
 
     observations = filtered;
