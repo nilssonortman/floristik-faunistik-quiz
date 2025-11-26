@@ -144,3 +144,9 @@ footer {
   padding: 0.15rem 0.25rem;
   font-size: 0.85rem;
 }
+
+.loading-image #photo {
+  opacity: 0.2;
+  filter: grayscale(100%);
+  transition: opacity 0.2s ease;
+}

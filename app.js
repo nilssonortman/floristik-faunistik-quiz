@@ -32,6 +32,7 @@ const progressEl = document.getElementById("progress");
 const scoreEl = document.getElementById("score");
 const questionContainerEl = document.getElementById("question-container");
 const photoEl = document.getElementById("photo");
+const imageWrapperEl = document.getElementById("image-wrapper");
 const answersEl = document.getElementById("answers");
 const attributionEl = document.getElementById("attribution");
 const nextBtn = document.getElementById("next-btn");
@@ -319,7 +320,14 @@ function renderQuestion() {
   progressEl.textContent = `Question ${currentIndex + 1} of ${total}`;
   scoreEl.textContent = `Score: ${score} / ${total}`;
 
-  // Image
+  // IMAGE: mark as loading (greyed out) until new image finishes loading
+  imageWrapperEl.classList.add("loading-image");
+
+  photoEl.onload = () => {
+    // When the new image has loaded, show it normally
+    imageWrapperEl.classList.remove("loading-image");
+  };
+
   photoEl.src = correct.photoUrl;
   photoEl.alt = `Observation photo`;
 
@@ -468,6 +476,9 @@ async function initQuiz() {
 
 // Next button handler
 nextBtn.addEventListener("click", () => {
+  // Immediately grey out the current image
+  imageWrapperEl.classList.add("loading-image");
+
   currentIndex += 1;
   renderQuestion();
 });
