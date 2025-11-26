@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #f5f5f7;
+  color: #222;
+}
+
+#app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.8rem;
+}
+
+.small {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+main {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#status {
+  margin-bottom: 1rem;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+#image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+#photo {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #eee;
+}
+
+#attribution {
+  margin-bottom: 0.75rem;
+}
+
+#answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  #answers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.answer-btn {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  transition: background 0.15s, border-color 0.15s, transform 0.05s;
+}
+
+.answer-btn:hover {
+  background: #f0f0ff;
+}
+
+.answer-btn:active {
+  transform: scale(0.99);
+}
+
+.answer-btn.correct {
+  background: #d6f5d6;
+  border-color: #4caf50;
+}
+
+.answer-btn.incorrect {
+  background: #ffd6d6;
+  border-color: #f44336;
+}
+
+.answer-btn.disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+#next-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#next-btn:hover {
+  background: #4338ca;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+#level-select {
+  margin-left: 0.25rem;
+  padding: 0.15rem 0.25rem;
+  font-size: 0.85rem;
+}

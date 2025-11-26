@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faunistics Quiz – iNaturalist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Faunistics Quiz</h1>
+      <p class="small">
+        Photos and IDs from iNaturalist course projects.
+      </p>
+      <p class="small">
+        <strong>Tip:</strong> You can select which project to use with
+        <code>?project=slug-here</code> in the URL.
+      </p>
+      <p class="small">
+        Quiz level:
+        <select id="level-select">
+          <option value="species">Art (species)</option>
+          <option value="genus">Släkte (genus)</option>
+          <option value="family">Familj (family)</option>
+        </select>
+      </p>
+    </header>
+
+    <main>
+      <div id="status">Loading observations from iNaturalist…</div>
+
+      <div id="controls" class="hidden">
+        <div id="progress"></div>
+        <div id="score"></div>
+      </div>
+
+      <div id="question-container" class="hidden">
+        <div id="image-wrapper">
+          <img id="photo" alt="Observation photo" />
+        </div>
+
+        <div id="attribution" class="small"></div>
+
+        <div id="answers"></div>
+
+        <button id="next-btn" class="hidden">Next</button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="small">
+        Data from iNaturalist via public API. Only observations and photos with
+        reuse-friendly licenses (CC0, CC-BY, CC-BY-NC) are used.
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
