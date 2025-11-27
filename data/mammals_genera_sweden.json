@@ -1,0 +1,142 @@
+[
+  {
+    "scientificName": "Capreolus",
+    "swedishName": "Rådjur",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1576
+  },
+  {
+    "scientificName": "Sciurus",
+    "swedishName": "ekorre",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1405
+  },
+  {
+    "scientificName": "Alces",
+    "swedishName": "Älg",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1088
+  },
+  {
+    "scientificName": "Lepus",
+    "swedishName": "Fälthare",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1052
+  },
+  {
+    "scientificName": "Rangifer",
+    "swedishName": "ren",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 583
+  },
+  {
+    "scientificName": "Erinaceus",
+    "swedishName": "igelkott",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 568
+  },
+  {
+    "scientificName": "Oryctolagus",
+    "swedishName": "Vildkanin",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 457
+  },
+  {
+    "scientificName": "Vulpes",
+    "swedishName": "Rödräv",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 423
+  },
+  {
+    "scientificName": "Dama",
+    "swedishName": "Dovhjort",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 313
+  },
+  {
+    "scientificName": "Castor",
+    "swedishName": "europeisk bäver",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 306
+  },
+  {
+    "scientificName": "Sus",
+    "swedishName": "Vildsvin",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 184
+  },
+  {
+    "scientificName": "Sorex",
+    "swedishName": "vanlig näbbmus",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 184
+  },
+  {
+    "scientificName": "Phoca",
+    "swedishName": "Knubbsäl",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 175
+  },
+  {
+    "scientificName": "Meles",
+    "swedishName": "Grävling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 173
+  },
+  {
+    "scientificName": "Neogale",
+    "swedishName": "mink",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 125
+  },
+  {
+    "scientificName": "Apodemus",
+    "swedishName": "större skogsmus",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 125
+  },
+  {
+    "scientificName": "Rattus",
+    "swedishName": "Brunråtta",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 120
+  },
+  {
+    "scientificName": "Halichoerus",
+    "swedishName": "gråsäl",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 92
+  },
+  {
+    "scientificName": "Clethrionomys",
+    "swedishName": "Skogssork",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 78
+  },
+  {
+    "scientificName": "Martes",
+    "swedishName": "mård",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 63
+  }
+]

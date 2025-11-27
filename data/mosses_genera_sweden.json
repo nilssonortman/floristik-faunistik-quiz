@@ -1,0 +1,247 @@
+[
+  {
+    "scientificName": "Polytrichum",
+    "swedishName": "stor björnmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1286
+  },
+  {
+    "scientificName": "Hypnum",
+    "swedishName": "Cypressfläta",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 726
+  },
+  {
+    "scientificName": "Sphagnum",
+    "swedishName": "Tallvitmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 722
+  },
+  {
+    "scientificName": "Hylocomium",
+    "swedishName": "husmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 659
+  },
+  {
+    "scientificName": "Dicranum",
+    "swedishName": "kvastmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 590
+  },
+  {
+    "scientificName": "Plagiomnium",
+    "swedishName": "vågig praktmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 492
+  },
+  {
+    "scientificName": "Hylocomiadelphus",
+    "swedishName": "kranshakmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 447
+  },
+  {
+    "scientificName": "Rhytidiadelphus",
+    "swedishName": "Gräshakmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 418
+  },
+  {
+    "scientificName": "Pleurozium",
+    "swedishName": "Väggmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 405
+  },
+  {
+    "scientificName": "Leucobryum",
+    "swedishName": "blåmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 341
+  },
+  {
+    "scientificName": "Mnium",
+    "swedishName": "skuggstjärnmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 308
+  },
+  {
+    "scientificName": "Ptilium",
+    "swedishName": "Kammossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 303
+  },
+  {
+    "scientificName": "Racomitrium",
+    "swedishName": "grå raggmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 292
+  },
+  {
+    "scientificName": "Ptilidium",
+    "swedishName": "tät fransmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 275
+  },
+  {
+    "scientificName": "Plagiothecium",
+    "swedishName": "vågig sidenmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 255
+  },
+  {
+    "scientificName": "Marchantia",
+    "swedishName": "Lungmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 207
+  },
+  {
+    "scientificName": "Homalothecium",
+    "swedishName": "guldlockmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 196
+  },
+  {
+    "scientificName": "Hedwigia",
+    "swedishName": "kakmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 178
+  },
+  {
+    "scientificName": "Thuidium",
+    "swedishName": "stor tujamossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 176
+  },
+  {
+    "scientificName": "Radula",
+    "swedishName": "plattsvepemossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 174
+  },
+  {
+    "scientificName": "Syntrichia",
+    "swedishName": "takmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 164
+  },
+  {
+    "scientificName": "Plagiochila",
+    "swedishName": "bräkenmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 164
+  },
+  {
+    "scientificName": "Climacium",
+    "swedishName": "palmmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 159
+  },
+  {
+    "scientificName": "Ceratodon",
+    "swedishName": "brännmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 157
+  },
+  {
+    "scientificName": "Grimmia",
+    "swedishName": "hårgrimmia",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 150
+  },
+  {
+    "scientificName": "Aulacomnium",
+    "swedishName": "räffelmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 150
+  },
+  {
+    "scientificName": "Lewinskya",
+    "swedishName": "trädhättemossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 149
+  },
+  {
+    "scientificName": "Pseudoscleropodium",
+    "swedishName": "Pösmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 148
+  },
+  {
+    "scientificName": "Atrichum",
+    "swedishName": "vågig sågmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 146
+  },
+  {
+    "scientificName": "Brachythecium",
+    "swedishName": "stor gräsmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 146
+  },
+  {
+    "scientificName": "Frullania",
+    "swedishName": "hjälmfrullania",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 139
+  },
+  {
+    "scientificName": "Metzgeria",
+    "swedishName": "bandmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 137
+  },
+  {
+    "scientificName": "Antitrichia",
+    "swedishName": "fällmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 121
+  },
+  {
+    "scientificName": "Alleniella",
+    "swedishName": "platt fjädermossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 121
+  },
+  {
+    "scientificName": "Rhodobryum",
+    "swedishName": "rosmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 121
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "scientificName": "Amanita",
+    "swedishName": "Röd flugsvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3356
+  },
+  {
+    "scientificName": "Cladonia",
+    "swedishName": "Grå renlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2595
+  },
+  {
+    "scientificName": "Fomitopsis",
+    "swedishName": "Klibbticka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2482
+  },
+  {
+    "scientificName": "Russula",
+    "swedishName": "gulkremla",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1522
+  },
+  {
+    "scientificName": "Cortinarius",
+    "swedishName": "rimskivling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1493
+  },
+  {
+    "scientificName": "Lactarius",
+    "swedishName": "pepparriska",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1396
+  },
+  {
+    "scientificName": "Leccinum",
+    "swedishName": "björksopp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1373
+  },
+  {
+    "scientificName": "Fomes",
+    "swedishName": "Fnöskticka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 938
+  },
+  {
+    "scientificName": "Xanthoria",
+    "swedishName": "Vägglav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 930
+  },
+  {
+    "scientificName": "Parmelia",
+    "swedishName": "Skrynkellav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 909
+  },
+  {
+    "scientificName": "Trametes",
+    "swedishName": "Zonticka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 894
+  },
+  {
+    "scientificName": "Hypogymnia",
+    "swedishName": "Blåslav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 876
+  },
+  {
+    "scientificName": "Evernia",
+    "swedishName": "Slånlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 856
+  },
+  {
+    "scientificName": "Boletus",
+    "swedishName": "Karljohansvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 812
+  },
+  {
+    "scientificName": "Suillus",
+    "swedishName": "sandsopp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 803
+  },
+  {
+    "scientificName": "Mycena",
+    "swedishName": "rynkhätta",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 787
+  },
+  {
+    "scientificName": "Cantharellus",
+    "swedishName": "Kantarell",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 779
+  },
+  {
+    "scientificName": "Lycoperdon",
+    "swedishName": "Vårtig röksvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 762
+  },
+  {
+    "scientificName": "Peltigera",
+    "swedishName": "fjällig filtlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 692
+  },
+  {
+    "scientificName": "Calocera",
+    "swedishName": "gullhorn",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 690
+  },
+  {
+    "scientificName": "Ramalina",
+    "swedishName": "mjölig brosklav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 648
+  },
+  {
+    "scientificName": "Craterellus",
+    "swedishName": "trattkantarell",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 625
+  },
+  {
+    "scientificName": "Stereum",
+    "swedishName": "Raggskinn",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 588
+  },
+  {
+    "scientificName": "Hygrocybe",
+    "swedishName": "toppvaxskivling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 579
+  },
+  {
+    "scientificName": "Laccaria",
+    "swedishName": "ametistskivling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 572
+  },
+  {
+    "scientificName": "Tricholoma",
+    "swedishName": "jordmusseron",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 571
+  },
+  {
+    "scientificName": "Hydnellum",
+    "swedishName": "skarp dropptaggsvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 547
+  },
+  {
+    "scientificName": "Coprinus",
+    "swedishName": "fjällig bläcksvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 531
+  },
+  {
+    "scientificName": "Phellinus",
+    "swedishName": "Aspticka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 518
+  },
+  {
+    "scientificName": "Hypholoma",
+    "swedishName": "svavelgul slöjskivling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 497
+  },
+  {
+    "scientificName": "Lecanora",
+    "swedishName": "lövträdskantlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 453
+  },
+  {
+    "scientificName": "Usnea",
+    "swedishName": "Skägglav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 438
+  },
+  {
+    "scientificName": "Cetraria",
+    "swedishName": "Islandslav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 423
+  },
+  {
+    "scientificName": "Laetiporus",
+    "swedishName": "Svavelticka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 418
+  },
+  {
+    "scientificName": "Xylaria",
+    "swedishName": "stubbhorn",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 405
+  },
+  {
+    "scientificName": "Platismatia",
+    "swedishName": "Näverlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 396
+  },
+  {
+    "scientificName": "Porodaedalea",
+    "swedishName": "Tallticka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 396
+  },
+  {
+    "scientificName": "Coprinellus",
+    "swedishName": "glitterbläcksvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 392
+  },
+  {
+    "scientificName": "Pleurotus",
+    "swedishName": "blek ostronmussling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 390
+  },
+  {
+    "scientificName": "Marasmius",
+    "swedishName": "nejlikbrosking",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 388
+  },
+  {
+    "scientificName": "Sarcodon",
+    "swedishName": "motaggsvamp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 382
+  },
+  {
+    "scientificName": "Lobaria",
+    "swedishName": "lunglav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 380
+  },
+  {
+    "scientificName": "Physcia",
+    "swedishName": "Hjälmrosettlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 369
+  },
+  {
+    "scientificName": "Tremella",
+    "swedishName": "Gullkrös",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 356
+  },
+  {
+    "scientificName": "Hygrophoropsis",
+    "swedishName": "Narrkantarell",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 356
+  },
+  {
+    "scientificName": "Armillaria",
+    "swedishName": "vanlig honungsskivling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 355
+  },
+  {
+    "scientificName": "Agaricus",
+    "swedishName": "snöbollschampinjon",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 355
+  },
+  {
+    "scientificName": "Xanthoparmelia",
+    "swedishName": "Kaklav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 353
+  },
+  {
+    "scientificName": "Pholiota",
+    "swedishName": "fjällig tofsskivling",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 349
+  },
+  {
+    "scientificName": "Phlyctis",
+    "swedishName": "blemlav",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 347
+  }
+]

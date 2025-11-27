@@ -4,26 +4,34 @@ const CONFIG = {
   DEFAULT_PROJECT_SLUG:
     "2025-floristik-och-faunistik-pa-kau-big001-bigbi1-bign10",
 
-  // Later, once you create an umbrella project, you can change this to:
-  // DEFAULT_PROJECT_SLUG: "kau-floristik-faunistik-all-years",
-
   QUESTIONS_COUNT: 10,
   OPTIONS_PER_QUESTION: 4,
   REQUIRE_RESEARCH_GRADE: true,
 
-  // License codes used by iNat (lowercase). We'll accept these:
   ALLOWED_LICENSES: ["cc0", "cc-by", "cc-by-nc"],
 
-  // How we define "broad groups" for distractors
-  GROUP_RANK_PRIORITY: ["class", "phylum", "division"],
+  // Broad group detection (for mapping to vocab groups)
+  GROUP_RANK_PRIORITY: ["class", "phylum", "division", "kingdom"],
 };
 
 // ==== STATE =============================================================
-let observations = [];       // all filtered/enriched observations
-let quizQuestions = [];      // current set of questions
+let observations = [];
+let quizQuestions = [];
 let currentIndex = 0;
 let score = 0;
 let currentLevel = "species"; // "species" | "genus" | "family"
+
+// External vocabularies (top genera per group in Sweden)
+const externalDistractors = {
+  insects: [],
+  plants: [],
+  mosses: [],
+  lichens: [],
+  mammals: [],
+  birds: [],
+  fungi: [],
+  spiders: [],
+};
 
 // ==== DOM ELEMENTS ======================================================
 const statusEl = document.getElementById("status");
@@ -90,14 +98,73 @@ function getGroupLabelForObs(obs) {
 // Text shown on answer buttons
 function formatAnswerText(obs) {
   const groupLabel = getGroupLabelForObs(obs) || obs.scientificName;
-  if (obs.swedishName) {
-    // Swedish name is species-level, but still helpful even in genus/family mode
-    return `${groupLabel} (${obs.swedishName})`;
-  }
+  if (obs.swedishName) return `${groupLabel} (${obs.swedishName})`;
   return groupLabel;
 }
 
-// ==== FETCH & PREP DATA =================================================
+// Map broad taxonomic group (class/phylum/…) to our didactic/vocab group keys
+function mapBroadGroupToDidacticGroup(broadGroupName) {
+  if (!broadGroupName) return null;
+
+  // Animals
+  if (broadGroupName === "Insecta") return "insects";
+  if (broadGroupName === "Aves") return "birds";
+  if (broadGroupName === "Mammalia") return "mammals";
+  if (broadGroupName === "Araneae") return "spiders"; // in practice a "order" ancestor may be the first rank
+
+  // Plants
+  if (broadGroupName === "Plantae" || broadGroupName === "Tracheophyta")
+    return "plants";
+
+  // Mosses (bryophytes)
+  if (
+    broadGroupName === "Bryophyta" ||
+    broadGroupName === "Marchantiophyta" ||
+    broadGroupName === "Anthocerotophyta"
+  )
+    return "mosses";
+
+  // Fungi
+  if (broadGroupName === "Fungi") return "fungi";
+
+  // Lichens – main lichen class
+  if (broadGroupName === "Lecanoromycetes") return "lichens";
+
+  return null;
+}
+
+// ==== LOAD EXTERNAL VOCAB =================================================
+
+async function loadExternalDistractors() {
+  const files = {
+    insects: "data/insects_genera_sweden.json",
+    plants: "data/plants_genera_sweden.json",
+    mosses: "data/mosses_genera_sweden.json",
+    lichens: "data/lichens_genera_sweden.json",
+    mammals: "data/mammals_genera_sweden.json",
+    birds: "data/birds_genera_sweden.json",
+    fungi: "data/fungi_genera_sweden.json",
+    spiders: "data/spiders_genera_sweden.json",
+  };
+
+  for (const [key, path] of Object.entries(files)) {
+    try {
+      const res = await fetch(path);
+      if (!res.ok) {
+        console.warn(`Failed to load ${path}: ${res.status}`);
+        continue;
+      }
+      externalDistractors[key] = await res.json();
+      console.log(
+        `Loaded ${externalDistractors[key].length} vocab genera for ${key}`
+      );
+    } catch (e) {
+      console.warn(`Error loading ${path}`, e);
+    }
+  }
+}
+
+// ==== FETCH & PREP DATA ===================================================
 
 async function fetchObservations(projectSlug) {
   const baseUrl = "https://api.inaturalist.org/v1/observations";
@@ -107,7 +174,7 @@ async function fetchObservations(projectSlug) {
     order: "desc",
     order_by: "created_at",
     photos: "true",
-    locale: "sv", // Ask for Swedish common names if available
+    locale: "sv",
   });
 
   if (CONFIG.REQUIRE_RESEARCH_GRADE) {
@@ -138,12 +205,10 @@ function filterAndTransform(rawObs) {
       continue;
     }
 
-    // Observation license (optional, but good to check)
     if (o.license_code && !licenseIsAllowed(o.license_code)) {
       continue;
     }
 
-    // At least one photo with allowed license
     const photo = photos.find((p) => licenseIsAllowed(p.license_code));
     if (!photo) continue;
 
@@ -160,10 +225,11 @@ function filterAndTransform(rawObs) {
       taxonId: taxon.id,
       photoUrl,
       scientificName,
-      swedishName: taxon.preferred_common_name || null, // Swedish if available (locale=sv)
+      swedishName: taxon.preferred_common_name || null,
       genusName,
-      familyName: null,     // to be filled in by enrichWithTaxaData
-      broadGroup: null,     // ditto: e.g. "Insecta", "Bryophyta"
+      familyName: null,
+      broadGroup: null,
+      didacticGroup: null,
       observer: (o.user && o.user.login) || "unknown",
       licenseCode: photo.license_code || o.license_code || null,
       obsUrl: `https://www.inaturalist.org/observations/${o.id}`,
@@ -204,7 +270,6 @@ async function enrichWithTaxaData(obsList) {
         let famName = null;
         let broadGroup = null;
 
-        // Family name
         if (t.rank === "family") {
           famName = t.name;
         } else if (Array.isArray(t.ancestors)) {
@@ -212,7 +277,6 @@ async function enrichWithTaxaData(obsList) {
           if (fam) famName = fam.name;
         }
 
-        // Broad group: first available rank from priority list
         if (Array.isArray(t.ancestors)) {
           for (const rank of CONFIG.GROUP_RANK_PRIORITY) {
             const anc = t.ancestors.find((a) => a.rank === rank);
@@ -223,12 +287,8 @@ async function enrichWithTaxaData(obsList) {
           }
         }
 
-        if (famName) {
-          familyMap.set(t.id, famName);
-        }
-        if (broadGroup) {
-          broadGroupMap.set(t.id, broadGroup);
-        }
+        if (famName) familyMap.set(t.id, famName);
+        if (broadGroup) broadGroupMap.set(t.id, broadGroup);
       }
     } catch (err) {
       console.warn("Error enriching taxa chunk:", err);
@@ -238,22 +298,26 @@ async function enrichWithTaxaData(obsList) {
   obsList.forEach((o) => {
     o.familyName = familyMap.get(o.taxonId) || null;
     o.broadGroup = broadGroupMap.get(o.taxonId) || null;
+    o.didacticGroup = mapBroadGroupToDidacticGroup(o.broadGroup);
   });
 }
 
-// Build quiz questions for the current level (species/genus/family)
+// ==== BUILD QUIZ QUESTIONS (genus uses vocab) =============================
+
 function buildQuizQuestions(obsList) {
   // Collapse to unique groups for this level
-  const groupsMap = new Map(); // groupLabel -> { label, obs, broadGroup }
+  const groupsMap = new Map(); // groupLabel -> { label, obs, broadGroup, didacticGroup }
 
   for (const obs of obsList) {
     const label = getGroupLabelForObs(obs);
-    if (!label) continue; // e.g. no family info yet
+    if (!label) continue;
+
     if (!groupsMap.has(label)) {
       groupsMap.set(label, {
         label,
         obs,
         broadGroup: obs.broadGroup || null,
+        didacticGroup: obs.didacticGroup || null,
       });
     }
   }
@@ -261,37 +325,76 @@ function buildQuizQuestions(obsList) {
   const groups = Array.from(groupsMap.values());
   if (!groups.length) return [];
 
-  const nQuestions = Math.min(CONFIG.QUESTIONS_COUNT, groups.length);
-  const chosenGroups = pickRandomSubset(groups, nQuestions);
-
+  const neededDistractors = CONFIG.OPTIONS_PER_QUESTION - 1;
   const questions = [];
 
-  for (const g of chosenGroups) {
+  for (const g of shuffleArray(groups)) {
+    if (questions.length >= CONFIG.QUESTIONS_COUNT) break;
+
     const correctObs = g.obs;
     const correctBroad = g.broadGroup;
+    const didacticGroup = g.didacticGroup;
 
-    // Candidate distractors: same broadGroup
-    let candidateGroups = groups.filter(
-      (x) =>
-        x.label !== g.label &&
-        correctBroad &&
-        x.broadGroup === correctBroad
-    );
+    if (!correctBroad) continue;
 
-    // Fallback: if too few, ignore broadGroup restriction
-    if (candidateGroups.length < CONFIG.OPTIONS_PER_QUESTION - 1) {
-      candidateGroups = groups.filter((x) => x.label !== g.label);
+    // -------------------------------------------------------------------
+    // GENUS MODE: correct = project genus, distractors = external vocab
+    // -------------------------------------------------------------------
+    if (currentLevel === "genus") {
+      if (!didacticGroup) continue;
+
+      const vocabList = externalDistractors[didacticGroup];
+      if (!vocabList || !vocabList.length) continue;
+
+      const correctGenusLabel = getGroupLabelForObs(correctObs);
+      if (!correctGenusLabel) continue;
+
+      const vocabClean = vocabList.filter(
+        (v) => v.scientificName !== correctGenusLabel
+      );
+
+      if (vocabClean.length < neededDistractors) continue;
+
+      const chosenVocab = pickRandomSubset(vocabClean, neededDistractors);
+
+      const distractorObs = chosenVocab.map((v) => ({
+        obsId: null,
+        taxonId: null,
+        photoUrl: null,
+        scientificName: v.scientificName,
+        swedishName: v.swedishName || null,
+        genusName: v.scientificName,
+        familyName: null,
+        broadGroup: correctBroad,
+        didacticGroup,
+        observer: "external",
+        licenseCode: null,
+        obsUrl: null,
+      }));
+
+      const options = shuffleArray([correctObs, ...distractorObs]);
+
+      questions.push({
+        correct: correctObs,
+        options,
+      });
+      continue;
     }
 
-    const distractorGroups = pickRandomSubset(
-      candidateGroups,
-      CONFIG.OPTIONS_PER_QUESTION - 1
+    // -------------------------------------------------------------------
+    // SPECIES / FAMILY MODE: project-based same-broadGroup distractors
+    // -------------------------------------------------------------------
+    const projectCandidates = groups.filter(
+      (x) => x.label !== g.label && x.broadGroup === correctBroad
+    );
+    if (projectCandidates.length < neededDistractors) continue;
+
+    const distractors = pickRandomSubset(
+      projectCandidates.map((cg) => cg.obs),
+      neededDistractors
     );
 
-    // Options are represented by observations, but correctness is by group label
-    const options = shuffleArray([g, ...distractorGroups]).map(
-      (grp) => grp.obs
-    );
+    const options = shuffleArray([correctObs, ...distractors]);
 
     questions.push({
       correct: correctObs,
@@ -302,7 +405,7 @@ function buildQuizQuestions(obsList) {
   return questions;
 }
 
-// ==== RENDERING =========================================================
+// ==== RENDERING ===========================================================
 
 function renderQuestion() {
   const total = quizQuestions.length;
@@ -314,24 +417,20 @@ function renderQuestion() {
   const { correct, options } = quizQuestions[currentIndex];
   const correctLabel = getGroupLabelForObs(correct) || correct.scientificName;
 
-  // Status + controls
   statusEl.textContent = "";
   controlsEl.classList.remove("hidden");
   progressEl.textContent = `Question ${currentIndex + 1} of ${total}`;
   scoreEl.textContent = `Score: ${score} / ${total}`;
 
-  // IMAGE: mark as loading (greyed out) until new image finishes loading
+  // Image: grey out while loading new image
   imageWrapperEl.classList.add("loading-image");
-
   photoEl.onload = () => {
-    // When the new image has loaded, show it normally
     imageWrapperEl.classList.remove("loading-image");
   };
 
   photoEl.src = correct.photoUrl;
-  photoEl.alt = `Observation photo`;
+  photoEl.alt = "Observation photo";
 
-  // Attribution
   const licenseText = correct.licenseCode
     ? `License: ${correct.licenseCode.toUpperCase()}`
     : "License: unknown";
@@ -344,7 +443,6 @@ function renderQuestion() {
     ${licenseText}
   `;
 
-  // Answers
   answersEl.innerHTML = "";
   options.forEach((opt) => {
     const btn = document.createElement("button");
@@ -377,7 +475,6 @@ function handleAnswerClick(clickedBtn, correct, correctLabel) {
     score += 1;
   } else {
     clickedBtn.classList.add("incorrect");
-    // Highlight the correct button
     buttons.forEach((b) => {
       if (b.dataset.groupLabel === correctLabel) {
         b.classList.add("correct");
@@ -421,7 +518,7 @@ function rebuildQuizForCurrentLevel() {
 
   if (!quizQuestions.length) {
     statusEl.textContent =
-      "Not enough distinct groups to create a quiz at this level. Try another level.";
+      "Not enough distinct groups to create a quiz at this level. Try another level or add more observations.";
     questionContainerEl.classList.add("hidden");
     nextBtn.classList.add("hidden");
     return;
@@ -430,7 +527,7 @@ function rebuildQuizForCurrentLevel() {
   renderQuestion();
 }
 
-// ==== INIT =============================================================
+// ==== INIT ===============================================================
 
 async function initQuiz() {
   const projectSlug = getProjectSlugFromUrl();
@@ -439,6 +536,8 @@ async function initQuiz() {
   levelSelectEl.value = currentLevel;
 
   try {
+    await loadExternalDistractors();
+
     const raw = await fetchObservations(projectSlug);
     let filtered = filterAndTransform(raw);
 
@@ -448,7 +547,6 @@ async function initQuiz() {
       return;
     }
 
-    // Enrich with family + broadGroup (used for family mode & smart distractors)
     try {
       await enrichWithTaxaData(filtered);
     } catch (err) {
@@ -462,7 +560,7 @@ async function initQuiz() {
 
     if (!quizQuestions.length) {
       statusEl.textContent =
-        "Not enough distinct taxa to create a quiz. Add more observations!";
+        "Not enough distinct taxa to create a quiz. Add more observations or switch level.";
       return;
     }
 
@@ -476,9 +574,7 @@ async function initQuiz() {
 
 // Next button handler
 nextBtn.addEventListener("click", () => {
-  // Immediately grey out the current image
   imageWrapperEl.classList.add("loading-image");
-
   currentIndex += 1;
   renderQuestion();
 });

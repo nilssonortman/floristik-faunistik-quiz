@@ -1,0 +1,702 @@
+[
+  {
+    "scientificName": "Vaccinium",
+    "swedishName": "Lingon",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 5698
+  },
+  {
+    "scientificName": "Trifolium",
+    "swedishName": "Rödklöver",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 4639
+  },
+  {
+    "scientificName": "Geranium",
+    "swedishName": "Stinknäva",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 4105
+  },
+  {
+    "scientificName": "Veronica",
+    "swedishName": "Teveronika",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3602
+  },
+  {
+    "scientificName": "Silene",
+    "swedishName": "rödblära",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3505
+  },
+  {
+    "scientificName": "Lysimachia",
+    "swedishName": "skogsstjärna",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3454
+  },
+  {
+    "scientificName": "Salix",
+    "swedishName": "ullvide",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3191
+  },
+  {
+    "scientificName": "Viola",
+    "swedishName": "Styvmorsviol",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3171
+  },
+  {
+    "scientificName": "Achillea",
+    "swedishName": "röllika",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 3023
+  },
+  {
+    "scientificName": "Rubus",
+    "swedishName": "Hallon",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2996
+  },
+  {
+    "scientificName": "Galium",
+    "swedishName": "Gulmåra",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2939
+  },
+  {
+    "scientificName": "Potentilla",
+    "swedishName": "blodrot",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2900
+  },
+  {
+    "scientificName": "Prunus",
+    "swedishName": "Slån",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2775
+  },
+  {
+    "scientificName": "Campanula",
+    "swedishName": "stor blåklocka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2751
+  },
+  {
+    "scientificName": "Melampyrum",
+    "swedishName": "Ängskovall",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2720
+  },
+  {
+    "scientificName": "Cirsium",
+    "swedishName": "Åkertistel",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2687
+  },
+  {
+    "scientificName": "Ranunculus",
+    "swedishName": "vanlig smörblomma",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2612
+  },
+  {
+    "scientificName": "Vicia",
+    "swedishName": "Kråkvicker",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2475
+  },
+  {
+    "scientificName": "Lathyrus",
+    "swedishName": "Gökärt",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2469
+  },
+  {
+    "scientificName": "Anemonoides",
+    "swedishName": "vitsippa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2388
+  },
+  {
+    "scientificName": "Dactylorhiza",
+    "swedishName": "Fläcknycklar",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2271
+  },
+  {
+    "scientificName": "Plantago",
+    "swedishName": "Svartkämpar",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 2122
+  },
+  {
+    "scientificName": "Calluna",
+    "swedishName": "Ljung",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1994
+  },
+  {
+    "scientificName": "Chamaenerion",
+    "swedishName": "mjölke",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1985
+  },
+  {
+    "scientificName": "Equisetum",
+    "swedishName": "Skogsfräken",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1984
+  },
+  {
+    "scientificName": "Sedum",
+    "swedishName": "gul fetknopp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1925
+  },
+  {
+    "scientificName": "Linaria",
+    "swedishName": "Gulsporre",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1876
+  },
+  {
+    "scientificName": "Rumex",
+    "swedishName": "bergsyra",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1875
+  },
+  {
+    "scientificName": "Centaurea",
+    "swedishName": "Rödklint",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1843
+  },
+  {
+    "scientificName": "Filipendula",
+    "swedishName": "Älggräs",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1812
+  },
+  {
+    "scientificName": "Carex",
+    "swedishName": "hundstarr",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1783
+  },
+  {
+    "scientificName": "Betula",
+    "swedishName": "Vårtbjörk",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1768
+  },
+  {
+    "scientificName": "Solidago",
+    "swedishName": "Gullris",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1766
+  },
+  {
+    "scientificName": "Pinus",
+    "swedishName": "Tall",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1758
+  },
+  {
+    "scientificName": "Juniperus",
+    "swedishName": "En",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1687
+  },
+  {
+    "scientificName": "Sorbus",
+    "swedishName": "rönn",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1681
+  },
+  {
+    "scientificName": "Lotus",
+    "swedishName": "Käringtand",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1650
+  },
+  {
+    "scientificName": "Rosa",
+    "swedishName": "Vresros",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1647
+  },
+  {
+    "scientificName": "Pilosella",
+    "swedishName": "Gråfibbla",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1588
+  },
+  {
+    "scientificName": "Hepatica",
+    "swedishName": "Blåsippa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1569
+  },
+  {
+    "scientificName": "Geum",
+    "swedishName": "Humleblomster",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1562
+  },
+  {
+    "scientificName": "Quercus",
+    "swedishName": "Ek",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1556
+  },
+  {
+    "scientificName": "Acer",
+    "swedishName": "skogslönn",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1514
+  },
+  {
+    "scientificName": "Tanacetum",
+    "swedishName": "Renfana",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1468
+  },
+  {
+    "scientificName": "Polypodium",
+    "swedishName": "Stensöta",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1465
+  },
+  {
+    "scientificName": "Lonicera",
+    "swedishName": "vildkaprifol",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1450
+  },
+  {
+    "scientificName": "Stellaria",
+    "swedishName": "grässtjärnblomma",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1388
+  },
+  {
+    "scientificName": "Echium",
+    "swedishName": "Blåeld",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1360
+  },
+  {
+    "scientificName": "Primula",
+    "swedishName": "Gullviva",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1335
+  },
+  {
+    "scientificName": "Sambucus",
+    "swedishName": "druvfläder",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1305
+  },
+  {
+    "scientificName": "Impatiens",
+    "swedishName": "Jättebalsamin",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1302
+  },
+  {
+    "scientificName": "Lamium",
+    "swedishName": "vitplister",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1262
+  },
+  {
+    "scientificName": "Hypericum",
+    "swedishName": "Äkta johannesört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1249
+  },
+  {
+    "scientificName": "Polytrichum",
+    "swedishName": "stor björnmossa",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1244
+  },
+  {
+    "scientificName": "Artemisia",
+    "swedishName": "Gråbo",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1227
+  },
+  {
+    "scientificName": "Saxifraga",
+    "swedishName": "mandelblom",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1217
+  },
+  {
+    "scientificName": "Myosotis",
+    "swedishName": "Skogsförgätmigej",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1171
+  },
+  {
+    "scientificName": "Fragaria",
+    "swedishName": "smultron",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1167
+  },
+  {
+    "scientificName": "Picea",
+    "swedishName": "Gran",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1161
+  },
+  {
+    "scientificName": "Lythrum",
+    "swedishName": "fackelblomster",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1156
+  },
+  {
+    "scientificName": "Tussilago",
+    "swedishName": "Tussilago",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1150
+  },
+  {
+    "scientificName": "Bellis",
+    "swedishName": "tusensköna",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1148
+  },
+  {
+    "scientificName": "Lupinus",
+    "swedishName": "blomsterlupin",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1145
+  },
+  {
+    "scientificName": "Urtica",
+    "swedishName": "brännässla",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1138
+  },
+  {
+    "scientificName": "Angelica",
+    "swedishName": "Strätta",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1106
+  },
+  {
+    "scientificName": "Populus",
+    "swedishName": "Asp",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1105
+  },
+  {
+    "scientificName": "Convallaria",
+    "swedishName": "Liljekonvalj",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1089
+  },
+  {
+    "scientificName": "Ficaria",
+    "swedishName": "svalört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1086
+  },
+  {
+    "scientificName": "Oxalis",
+    "swedishName": "harsyra",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1081
+  },
+  {
+    "scientificName": "Hieracium",
+    "swedishName": "flockfibbla",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1043
+  },
+  {
+    "scientificName": "Orchis",
+    "swedishName": "Sankt Pers nycklar",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1032
+  },
+  {
+    "scientificName": "Hylotelephium",
+    "swedishName": "vanlig kärleksört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1030
+  },
+  {
+    "scientificName": "Cardamine",
+    "swedishName": "Braxenblomster",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1020
+  },
+  {
+    "scientificName": "Prunella",
+    "swedishName": "Brunört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1018
+  },
+  {
+    "scientificName": "Malva",
+    "swedishName": "Myskmalva",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1018
+  },
+  {
+    "scientificName": "Knautia",
+    "swedishName": "Åkervädd",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1017
+  },
+  {
+    "scientificName": "Alnus",
+    "swedishName": "Klibbal",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1011
+  },
+  {
+    "scientificName": "Tripleurospermum",
+    "swedishName": "Baldersbrå",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 1004
+  },
+  {
+    "scientificName": "Drosera",
+    "swedishName": "Rundsileshår",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 989
+  },
+  {
+    "scientificName": "Empetrum",
+    "swedishName": "kråkbär",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 985
+  },
+  {
+    "scientificName": "Allium",
+    "swedishName": "Gräslök",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 983
+  },
+  {
+    "scientificName": "Viscaria",
+    "swedishName": "Tjärblomster",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 977
+  },
+  {
+    "scientificName": "Armeria",
+    "swedishName": "Trift",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 969
+  },
+  {
+    "scientificName": "Juncus",
+    "swedishName": "veketåg",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 967
+  },
+  {
+    "scientificName": "Dianthus",
+    "swedishName": "Backnejlika",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 966
+  },
+  {
+    "scientificName": "Eriophorum",
+    "swedishName": "tuvull",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 954
+  },
+  {
+    "scientificName": "Anthriscus",
+    "swedishName": "Hundkäx",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 941
+  },
+  {
+    "scientificName": "Corylus",
+    "swedishName": "Hassel",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 940
+  },
+  {
+    "scientificName": "Dryopteris",
+    "swedishName": "Träjon",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 933
+  },
+  {
+    "scientificName": "Caltha",
+    "swedishName": "Kabbeleka",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 921
+  },
+  {
+    "scientificName": "Scilla",
+    "swedishName": "Rysk blåstjärna",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 915
+  },
+  {
+    "scientificName": "Verbascum",
+    "swedishName": "mörkt kungsljus",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 914
+  },
+  {
+    "scientificName": "Cerastium",
+    "swedishName": "hönsarv",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 914
+  },
+  {
+    "scientificName": "Epilobium",
+    "swedishName": "Rosendunört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 905
+  },
+  {
+    "scientificName": "Senecio",
+    "swedishName": "klibbkorsört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 892
+  },
+  {
+    "scientificName": "Cornus",
+    "swedishName": "hönsbär",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 880
+  },
+  {
+    "scientificName": "Medicago",
+    "swedishName": "humlelucern",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 880
+  },
+  {
+    "scientificName": "Chelidonium",
+    "swedishName": "Skelört",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 850
+  },
+  {
+    "scientificName": "Leucanthemum",
+    "swedishName": "Prästkrage",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 846
+  },
+  {
+    "scientificName": "Rhododendron",
+    "swedishName": "skvattram",
+    "rank": "genus",
+    "taxonId": null,
+    "obsCount": 840
+  }
+]
