@@ -1,0 +1,317 @@
+[
+  {
+    "scientificName": "Araneus diadematus",
+    "swedishName": "Korsspindel",
+    "genusName": "Araneus",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 52628,
+    "obsCount": 1199
+  },
+  {
+    "scientificName": "Misumena vatia",
+    "swedishName": "Blomkrabbspindel",
+    "genusName": "Misumena",
+    "familyName": "Thomisidae",
+    "rank": "species",
+    "taxonId": 55746,
+    "obsCount": 666
+  },
+  {
+    "scientificName": "Eratigena atrica",
+    "swedishName": "Större husspindel",
+    "genusName": "Eratigena",
+    "familyName": "Agelenidae",
+    "rank": "species",
+    "taxonId": 751174,
+    "obsCount": 625
+  },
+  {
+    "scientificName": "Pisaura mirabilis",
+    "swedishName": "Presentspindel",
+    "genusName": "Pisaura",
+    "familyName": "Pisauridae",
+    "rank": "species",
+    "taxonId": 55787,
+    "obsCount": 595
+  },
+  {
+    "scientificName": "Nuctenea umbratica",
+    "swedishName": "Större skuggspindel",
+    "genusName": "Nuctenea",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 130092,
+    "obsCount": 521
+  },
+  {
+    "scientificName": "Salticus scenicus",
+    "swedishName": "Sebraspindel",
+    "genusName": "Salticus",
+    "familyName": "Salticidae",
+    "rank": "species",
+    "taxonId": 68901,
+    "obsCount": 483
+  },
+  {
+    "scientificName": "Marpissa muscosa",
+    "swedishName": "Murhoppspindel",
+    "genusName": "Marpissa",
+    "familyName": "Salticidae",
+    "rank": "species",
+    "taxonId": 146723,
+    "obsCount": 331
+  },
+  {
+    "scientificName": "Steatoda bipunctata",
+    "swedishName": "Fettspindel",
+    "genusName": "Steatoda",
+    "familyName": "Theridiidae",
+    "rank": "species",
+    "taxonId": 146685,
+    "obsCount": 293
+  },
+  {
+    "scientificName": "Larinioides sclopetarius",
+    "swedishName": "Brospindel",
+    "genusName": "Larinioides",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 538959,
+    "obsCount": 277
+  },
+  {
+    "scientificName": "Zygiella x-notata",
+    "swedishName": "bredsektorspindel",
+    "genusName": "Zygiella",
+    "familyName": "Phonognathidae",
+    "rank": "species",
+    "taxonId": 155279,
+    "obsCount": 266
+  },
+  {
+    "scientificName": "Dolomedes fimbriatus",
+    "swedishName": "Kärrspindel",
+    "genusName": "Dolomedes",
+    "familyName": "Dolomedidae",
+    "rank": "species",
+    "taxonId": 121778,
+    "obsCount": 263
+  },
+  {
+    "scientificName": "Micrommata virescens",
+    "swedishName": "Grön bladspindel",
+    "genusName": "Micrommata",
+    "familyName": "Sparassidae",
+    "rank": "species",
+    "taxonId": 121766,
+    "obsCount": 235
+  },
+  {
+    "scientificName": "Acantholycosa lignaria",
+    "swedishName": "Stockvargspindel",
+    "genusName": "Acantholycosa",
+    "familyName": "Lycosidae",
+    "rank": "species",
+    "taxonId": 533746,
+    "obsCount": 227
+  },
+  {
+    "scientificName": "Philodromus margaritatus",
+    "swedishName": "brokig barksnabblöpare",
+    "genusName": "Philodromus",
+    "familyName": "Philodromidae",
+    "rank": "species",
+    "taxonId": 360677,
+    "obsCount": 217
+  },
+  {
+    "scientificName": "Araneus quadratus",
+    "swedishName": "kvadratspindel",
+    "genusName": "Araneus",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 121782,
+    "obsCount": 194
+  },
+  {
+    "scientificName": "Scotophaeus blackwalli",
+    "swedishName": "mindre musspindel",
+    "genusName": "Scotophaeus",
+    "familyName": "Gnaphosidae",
+    "rank": "species",
+    "taxonId": 206295,
+    "obsCount": 194
+  },
+  {
+    "scientificName": "Metellina segmentata",
+    "swedishName": "höstspindel",
+    "genusName": "Metellina",
+    "familyName": "Tetragnathidae",
+    "rank": "species",
+    "taxonId": 55621,
+    "obsCount": 181
+  },
+  {
+    "scientificName": "Argiope bruennichi",
+    "swedishName": "getingspindel",
+    "genusName": "Argiope",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 50867,
+    "obsCount": 172
+  },
+  {
+    "scientificName": "Enoplognatha ovata",
+    "swedishName": "Äggspindel",
+    "genusName": "Enoplognatha",
+    "familyName": "Theridiidae",
+    "rank": "species",
+    "taxonId": 219195,
+    "obsCount": 171
+  },
+  {
+    "scientificName": "Araniella cucurbitina",
+    "swedishName": "Gurkspindel",
+    "genusName": "Araniella",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 129017,
+    "obsCount": 158
+  },
+  {
+    "scientificName": "Evarcha falcata",
+    "swedishName": "brokhoppspindel",
+    "genusName": "Evarcha",
+    "familyName": "Salticidae",
+    "rank": "species",
+    "taxonId": 61761,
+    "obsCount": 157
+  },
+  {
+    "scientificName": "Tegenaria domestica",
+    "swedishName": "mindre husspindel",
+    "genusName": "Tegenaria",
+    "familyName": "Agelenidae",
+    "rank": "species",
+    "taxonId": 153507,
+    "obsCount": 150
+  },
+  {
+    "scientificName": "Agelena labyrinthica",
+    "swedishName": "Labyrintspindel",
+    "genusName": "Agelena",
+    "familyName": "Agelenidae",
+    "rank": "species",
+    "taxonId": 130304,
+    "obsCount": 146
+  },
+  {
+    "scientificName": "Pholcus phalangioides",
+    "swedishName": "större dallerspindel",
+    "genusName": "Pholcus",
+    "familyName": "Pholcidae",
+    "rank": "species",
+    "taxonId": 67328,
+    "obsCount": 140
+  },
+  {
+    "scientificName": "Meta menardi",
+    "swedishName": "källarspindel",
+    "genusName": "Meta",
+    "familyName": "Tetragnathidae",
+    "rank": "species",
+    "taxonId": 224958,
+    "obsCount": 140
+  },
+  {
+    "scientificName": "Aelurillus v-insignitus",
+    "swedishName": "vinkelhoppspindel",
+    "genusName": "Aelurillus",
+    "familyName": "Salticidae",
+    "rank": "species",
+    "taxonId": 130287,
+    "obsCount": 134
+  },
+  {
+    "scientificName": "Textrix denticulata",
+    "swedishName": "klipptrattspindel",
+    "genusName": "Textrix",
+    "familyName": "Agelenidae",
+    "rank": "species",
+    "taxonId": 335613,
+    "obsCount": 120
+  },
+  {
+    "scientificName": "Trochosa ruricola",
+    "swedishName": "fältbjörnspindel",
+    "genusName": "Trochosa",
+    "familyName": "Lycosidae",
+    "rank": "species",
+    "taxonId": 233038,
+    "obsCount": 109
+  },
+  {
+    "scientificName": "Attulus terebratus",
+    "swedishName": "laduhoppspindel",
+    "genusName": "Attulus",
+    "familyName": "Salticidae",
+    "rank": "species",
+    "taxonId": 1070901,
+    "obsCount": 103
+  },
+  {
+    "scientificName": "Xysticus ulmi",
+    "swedishName": "Kärrkrabbspindel",
+    "genusName": "Xysticus",
+    "familyName": "Thomisidae",
+    "rank": "species",
+    "taxonId": 496641,
+    "obsCount": 101
+  },
+  {
+    "scientificName": "Diaea dorsata",
+    "swedishName": "bladkrabbspindel",
+    "genusName": "Diaea",
+    "familyName": "Thomisidae",
+    "rank": "species",
+    "taxonId": 207955,
+    "obsCount": 91
+  },
+  {
+    "scientificName": "Larinioides cornutus",
+    "swedishName": "vasshjulspindel",
+    "genusName": "Larinioides",
+    "familyName": "Araneidae",
+    "rank": "species",
+    "taxonId": 126513,
+    "obsCount": 90
+  },
+  {
+    "scientificName": "Segestria senoculata",
+    "swedishName": "huggormsspindel",
+    "genusName": "Segestria",
+    "familyName": "Segestriidae",
+    "rank": "species",
+    "taxonId": 318909,
+    "obsCount": 89
+  },
+  {
+    "scientificName": "Anyphaena accentuata",
+    "swedishName": "trumspindel",
+    "genusName": "Anyphaena",
+    "familyName": "Anyphaenidae",
+    "rank": "species",
+    "taxonId": 319828,
+    "obsCount": 87
+  },
+  {
+    "scientificName": "Trochosa terricola",
+    "swedishName": "skogsbjörnspindel",
+    "genusName": "Trochosa",
+    "familyName": "Lycosidae",
+    "rank": "species",
+    "taxonId": 148394,
+    "obsCount": 84
+  }
+]

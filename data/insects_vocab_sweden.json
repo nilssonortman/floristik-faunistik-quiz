@@ -1,0 +1,632 @@
+[
+  {
+    "scientificName": "Anoplotrupes stercorosus",
+    "swedishName": "Skogstordyvel",
+    "genusName": "Anoplotrupes",
+    "familyName": "Geotrupidae",
+    "rank": "species",
+    "taxonId": 125655,
+    "obsCount": 1647
+  },
+  {
+    "scientificName": "Aglais urticae",
+    "swedishName": "Nässelfjäril",
+    "genusName": "Aglais",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 54468,
+    "obsCount": 1537
+  },
+  {
+    "scientificName": "Argynnis paphia",
+    "swedishName": "Silverstreckad pärlemorfjäril",
+    "genusName": "Argynnis",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 123628,
+    "obsCount": 1465
+  },
+  {
+    "scientificName": "Vanessa atalanta",
+    "swedishName": "Amiral",
+    "genusName": "Vanessa",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 49133,
+    "obsCount": 1392
+  },
+  {
+    "scientificName": "Coccinella septempunctata",
+    "swedishName": "Sjuprickig nyckelpiga",
+    "genusName": "Coccinella",
+    "familyName": "Coccinellidae",
+    "rank": "species",
+    "taxonId": 51702,
+    "obsCount": 1380
+  },
+  {
+    "scientificName": "Noctua pronuba",
+    "swedishName": "Större bandfly",
+    "genusName": "Noctua",
+    "familyName": "Noctuidae",
+    "rank": "species",
+    "taxonId": 81687,
+    "obsCount": 1250
+  },
+  {
+    "scientificName": "Palomena prasina",
+    "swedishName": "Grön bärfis",
+    "genusName": "Palomena",
+    "familyName": "Pentatomidae",
+    "rank": "species",
+    "taxonId": 62060,
+    "obsCount": 1219
+  },
+  {
+    "scientificName": "Gonepteryx rhamni",
+    "swedishName": "Citronfjäril",
+    "genusName": "Gonepteryx",
+    "familyName": "Pieridae",
+    "rank": "species",
+    "taxonId": 52771,
+    "obsCount": 1196
+  },
+  {
+    "scientificName": "Aglais io",
+    "swedishName": "Påfågelöga",
+    "genusName": "Aglais",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 207977,
+    "obsCount": 1196
+  },
+  {
+    "scientificName": "Bombus pascuorum",
+    "swedishName": "Åkerhumla",
+    "genusName": "Bombus",
+    "familyName": "Apidae",
+    "rank": "species",
+    "taxonId": 55637,
+    "obsCount": 1183
+  },
+  {
+    "scientificName": "Apis mellifera",
+    "swedishName": "Honungsbi",
+    "genusName": "Apis",
+    "familyName": "Apidae",
+    "rank": "species",
+    "taxonId": 47219,
+    "obsCount": 1166
+  },
+  {
+    "scientificName": "Harmonia axyridis",
+    "swedishName": "Harlekinpiga",
+    "genusName": "Harmonia",
+    "familyName": "Coccinellidae",
+    "rank": "species",
+    "taxonId": 48484,
+    "obsCount": 1151
+  },
+  {
+    "scientificName": "Aphantopus hyperantus",
+    "swedishName": "Luktgräsfjäril",
+    "genusName": "Aphantopus",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 62426,
+    "obsCount": 1104
+  },
+  {
+    "scientificName": "Pentatoma rufipes",
+    "swedishName": "Rödbent bärfis",
+    "genusName": "Pentatoma",
+    "familyName": "Pentatomidae",
+    "rank": "species",
+    "taxonId": 51275,
+    "obsCount": 1044
+  },
+  {
+    "scientificName": "Pieris napi",
+    "swedishName": "Rapsfjäril",
+    "genusName": "Pieris",
+    "familyName": "Pieridae",
+    "rank": "species",
+    "taxonId": 54087,
+    "obsCount": 1035
+  },
+  {
+    "scientificName": "Lycaena phlaeas",
+    "swedishName": "Mindre guldvinge",
+    "genusName": "Lycaena",
+    "familyName": "Lycaenidae",
+    "rank": "species",
+    "taxonId": 55655,
+    "obsCount": 1000
+  },
+  {
+    "scientificName": "Trichius fasciatus",
+    "swedishName": "Humlebagge",
+    "genusName": "Trichius",
+    "familyName": "Scarabaeidae",
+    "rank": "species",
+    "taxonId": 55783,
+    "obsCount": 997
+  },
+  {
+    "scientificName": "Stictoleptura rubra",
+    "swedishName": "Gulröd blombock",
+    "genusName": "Stictoleptura",
+    "familyName": "Cerambycidae",
+    "rank": "species",
+    "taxonId": 53258,
+    "obsCount": 941
+  },
+  {
+    "scientificName": "Macrothylacia rubi",
+    "swedishName": "Gräsulv",
+    "genusName": "Macrothylacia",
+    "familyName": "Lasiocampidae",
+    "rank": "species",
+    "taxonId": 127506,
+    "obsCount": 938
+  },
+  {
+    "scientificName": "Tettigonia viridissima",
+    "swedishName": "Grön vårtbitare",
+    "genusName": "Tettigonia",
+    "familyName": "Tettigoniidae",
+    "rank": "species",
+    "taxonId": 133250,
+    "obsCount": 933
+  },
+  {
+    "scientificName": "Cetonia aurata",
+    "swedishName": "Gräsgrön guldbagge",
+    "genusName": "Cetonia",
+    "familyName": "Scarabaeidae",
+    "rank": "species",
+    "taxonId": 52402,
+    "obsCount": 904
+  },
+  {
+    "scientificName": "Polyommatus icarus",
+    "swedishName": "puktörneblåvinge",
+    "genusName": "Polyommatus",
+    "familyName": "Lycaenidae",
+    "rank": "species",
+    "taxonId": 55641,
+    "obsCount": 869
+  },
+  {
+    "scientificName": "Melitaea athalia",
+    "swedishName": "Skogsnätfjäril",
+    "genusName": "Melitaea",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 132875,
+    "obsCount": 843
+  },
+  {
+    "scientificName": "Maniola jurtina",
+    "swedishName": "Slåttergräsfjäril",
+    "genusName": "Maniola",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 55653,
+    "obsCount": 774
+  },
+  {
+    "scientificName": "Cossus cossus",
+    "swedishName": "Större träfjäril",
+    "genusName": "Cossus",
+    "familyName": "Cossidae",
+    "rank": "species",
+    "taxonId": 362611,
+    "obsCount": 738
+  },
+  {
+    "scientificName": "Ochlodes sylvanus",
+    "swedishName": "ängssmygare",
+    "genusName": "Ochlodes",
+    "familyName": "Hesperiidae",
+    "rank": "species",
+    "taxonId": 61781,
+    "obsCount": 724
+  },
+  {
+    "scientificName": "Pyrrhocoris apterus",
+    "swedishName": "Eldlus",
+    "genusName": "Pyrrhocoris",
+    "familyName": "Pyrrhocoridae",
+    "rank": "species",
+    "taxonId": 55610,
+    "obsCount": 720
+  },
+  {
+    "scientificName": "Xestia c-nigrum",
+    "swedishName": "c-tecknat jordfly",
+    "genusName": "Xestia",
+    "familyName": "Noctuidae",
+    "rank": "species",
+    "taxonId": 203342,
+    "obsCount": 711
+  },
+  {
+    "scientificName": "Graphosoma italicum",
+    "swedishName": "strimlus",
+    "genusName": "Graphosoma",
+    "familyName": "Pentatomidae",
+    "rank": "species",
+    "taxonId": 84804,
+    "obsCount": 698
+  },
+  {
+    "scientificName": "Episyrphus balteatus",
+    "swedishName": "Flyttblomfluga",
+    "genusName": "Episyrphus",
+    "familyName": "Syrphidae",
+    "rank": "species",
+    "taxonId": 52482,
+    "obsCount": 694
+  },
+  {
+    "scientificName": "Polygonia c-album",
+    "swedishName": "Vinbärsfuks",
+    "genusName": "Polygonia",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 56225,
+    "obsCount": 681
+  },
+  {
+    "scientificName": "Autographa gamma",
+    "swedishName": "Gammafly",
+    "genusName": "Autographa",
+    "familyName": "Noctuidae",
+    "rank": "species",
+    "taxonId": 55651,
+    "obsCount": 672
+  },
+  {
+    "scientificName": "Bombus lapidarius",
+    "swedishName": "Stenhumla",
+    "genusName": "Bombus",
+    "familyName": "Apidae",
+    "rank": "species",
+    "taxonId": 57619,
+    "obsCount": 667
+  },
+  {
+    "scientificName": "Nymphalis antiopa",
+    "swedishName": "sorgmantel",
+    "genusName": "Nymphalis",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 56832,
+    "obsCount": 665
+  },
+  {
+    "scientificName": "Vespa crabro",
+    "swedishName": "Bålgeting",
+    "genusName": "Vespa",
+    "familyName": "Vespidae",
+    "rank": "species",
+    "taxonId": 54327,
+    "obsCount": 657
+  },
+  {
+    "scientificName": "Agelastica alni",
+    "swedishName": "Allövbagge",
+    "genusName": "Agelastica",
+    "familyName": "Chrysomelidae",
+    "rank": "species",
+    "taxonId": 210933,
+    "obsCount": 637
+  },
+  {
+    "scientificName": "Sympetrum sanguineum",
+    "swedishName": "blodröd ängstrollslända",
+    "genusName": "Sympetrum",
+    "familyName": "Libellulidae",
+    "rank": "species",
+    "taxonId": 113525,
+    "obsCount": 614
+  },
+  {
+    "scientificName": "Stenurella melanura",
+    "swedishName": "Ängsblombock",
+    "genusName": "Stenurella",
+    "familyName": "Cerambycidae",
+    "rank": "species",
+    "taxonId": 52436,
+    "obsCount": 604
+  },
+  {
+    "scientificName": "Plebejus argus",
+    "swedishName": "Ljungblåvinge",
+    "genusName": "Plebejus",
+    "familyName": "Lycaenidae",
+    "rank": "species",
+    "taxonId": 57484,
+    "obsCount": 601
+  },
+  {
+    "scientificName": "Luperina testacea",
+    "swedishName": "gräsrotsfly",
+    "genusName": "Luperina",
+    "familyName": "Noctuidae",
+    "rank": "species",
+    "taxonId": 429178,
+    "obsCount": 586
+  },
+  {
+    "scientificName": "Psyllobora vigintiduopunctata",
+    "swedishName": "Tjugotvåprickig nyckelpiga",
+    "genusName": "Psyllobora",
+    "familyName": "Coccinellidae",
+    "rank": "species",
+    "taxonId": 51660,
+    "obsCount": 573
+  },
+  {
+    "scientificName": "Bombus hypnorum",
+    "swedishName": "Hushumla",
+    "genusName": "Bombus",
+    "familyName": "Apidae",
+    "rank": "species",
+    "taxonId": 61803,
+    "obsCount": 568
+  },
+  {
+    "scientificName": "Callophrys rubi",
+    "swedishName": "Grönsnabbvinge",
+    "genusName": "Callophrys",
+    "familyName": "Lycaenidae",
+    "rank": "species",
+    "taxonId": 60896,
+    "obsCount": 561
+  },
+  {
+    "scientificName": "Propylea quatuordecimpunctata",
+    "swedishName": "fjortonprickig nyckelpiga",
+    "genusName": "Propylea",
+    "familyName": "Coccinellidae",
+    "rank": "species",
+    "taxonId": 61532,
+    "obsCount": 558
+  },
+  {
+    "scientificName": "Yponomeuta evonymella",
+    "swedishName": "häggspinnmal",
+    "genusName": "Yponomeuta",
+    "familyName": "Yponomeutidae",
+    "rank": "species",
+    "taxonId": 324630,
+    "obsCount": 554
+  },
+  {
+    "scientificName": "Sympetrum vulgatum",
+    "swedishName": "tegelröd ängstrollslända",
+    "genusName": "Sympetrum",
+    "familyName": "Libellulidae",
+    "rank": "species",
+    "taxonId": 132657,
+    "obsCount": 536
+  },
+  {
+    "scientificName": "Dolycoris baccarum",
+    "swedishName": "Hårig bärfis",
+    "genusName": "Dolycoris",
+    "familyName": "Pentatomidae",
+    "rank": "species",
+    "taxonId": 51666,
+    "obsCount": 525
+  },
+  {
+    "scientificName": "Enallagma cyathigerum",
+    "swedishName": "sjöflickslända",
+    "genusName": "Enallagma",
+    "familyName": "Coenagrionidae",
+    "rank": "species",
+    "taxonId": 99901,
+    "obsCount": 524
+  },
+  {
+    "scientificName": "Leptura quadrifasciata",
+    "swedishName": "Fyrbandad blombock",
+    "genusName": "Leptura",
+    "familyName": "Cerambycidae",
+    "rank": "species",
+    "taxonId": 325731,
+    "obsCount": 519
+  },
+  {
+    "scientificName": "Volucella pellucens",
+    "swedishName": "Fönsterblomfluga",
+    "genusName": "Volucella",
+    "familyName": "Syrphidae",
+    "rank": "species",
+    "taxonId": 52480,
+    "obsCount": 518
+  },
+  {
+    "scientificName": "Chorthippus brunneus",
+    "swedishName": "backgräshoppa",
+    "genusName": "Chorthippus",
+    "familyName": "Acrididae",
+    "rank": "species",
+    "taxonId": 127308,
+    "obsCount": 514
+  },
+  {
+    "scientificName": "Rhagonycha fulva",
+    "swedishName": "Prästbagge",
+    "genusName": "Rhagonycha",
+    "familyName": "Cantharidae",
+    "rank": "species",
+    "taxonId": 62456,
+    "obsCount": 508
+  },
+  {
+    "scientificName": "Helophilus pendulus",
+    "swedishName": "Pendelblomfluga",
+    "genusName": "Helophilus",
+    "familyName": "Syrphidae",
+    "rank": "species",
+    "taxonId": 52486,
+    "obsCount": 507
+  },
+  {
+    "scientificName": "Orthetrum cancellatum",
+    "swedishName": "Större sjötrollslända",
+    "genusName": "Orthetrum",
+    "familyName": "Libellulidae",
+    "rank": "species",
+    "taxonId": 62067,
+    "obsCount": 501
+  },
+  {
+    "scientificName": "Pholidoptera griseoaptera",
+    "swedishName": "Buskvårtbitare",
+    "genusName": "Pholidoptera",
+    "familyName": "Tettigoniidae",
+    "rank": "species",
+    "taxonId": 55359,
+    "obsCount": 490
+  },
+  {
+    "scientificName": "Coreus marginatus",
+    "swedishName": "stort kantstinkfly",
+    "genusName": "Coreus",
+    "familyName": "Coreidae",
+    "rank": "species",
+    "taxonId": 318545,
+    "obsCount": 487
+  },
+  {
+    "scientificName": "Bombus terrestris",
+    "swedishName": "Mörk jordhumla",
+    "genusName": "Bombus",
+    "familyName": "Apidae",
+    "rank": "species",
+    "taxonId": 57516,
+    "obsCount": 483
+  },
+  {
+    "scientificName": "Mythimna pallens",
+    "swedishName": "halmgult gräsfly",
+    "genusName": "Mythimna",
+    "familyName": "Noctuidae",
+    "rank": "species",
+    "taxonId": 356188,
+    "obsCount": 483
+  },
+  {
+    "scientificName": "Pieris brassicae",
+    "swedishName": "Kålfjäril",
+    "genusName": "Pieris",
+    "familyName": "Pieridae",
+    "rank": "species",
+    "taxonId": 55401,
+    "obsCount": 482
+  },
+  {
+    "scientificName": "Argynnis aglaja",
+    "swedishName": "Ängspärlemorfjäril",
+    "genusName": "Argynnis",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 1456607,
+    "obsCount": 481
+  },
+  {
+    "scientificName": "Hipparchia semele",
+    "swedishName": "Sandgräsfjäril",
+    "genusName": "Hipparchia",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 102800,
+    "obsCount": 468
+  },
+  {
+    "scientificName": "Libellula quadrimaculata",
+    "swedishName": "Fyrfläckad trollslända",
+    "genusName": "Libellula",
+    "familyName": "Libellulidae",
+    "rank": "species",
+    "taxonId": 57443,
+    "obsCount": 456
+  },
+  {
+    "scientificName": "Aromia moschata",
+    "swedishName": "Myskbock",
+    "genusName": "Aromia",
+    "familyName": "Cerambycidae",
+    "rank": "species",
+    "taxonId": 129385,
+    "obsCount": 456
+  },
+  {
+    "scientificName": "Bombus pratorum",
+    "swedishName": "Ängshumla",
+    "genusName": "Bombus",
+    "familyName": "Apidae",
+    "rank": "species",
+    "taxonId": 124910,
+    "obsCount": 454
+  },
+  {
+    "scientificName": "Coenonympha arcania",
+    "swedishName": "Pärlgräsfjäril",
+    "genusName": "Coenonympha",
+    "familyName": "Nymphalidae",
+    "rank": "species",
+    "taxonId": 125815,
+    "obsCount": 443
+  },
+  {
+    "scientificName": "Lycaena virgaureae",
+    "swedishName": "Vitfläckig guldvinge",
+    "genusName": "Lycaena",
+    "familyName": "Lycaenidae",
+    "rank": "species",
+    "taxonId": 147078,
+    "obsCount": 436
+  },
+  {
+    "scientificName": "Carabus nemoralis",
+    "swedishName": "parklöpare",
+    "genusName": "Carabus",
+    "familyName": "Carabidae",
+    "rank": "species",
+    "taxonId": 56552,
+    "obsCount": 426
+  },
+  {
+    "scientificName": "Ematurga atomaria",
+    "swedishName": "ängsmätare",
+    "genusName": "Ematurga",
+    "familyName": "Geometridae",
+    "rank": "species",
+    "taxonId": 354801,
+    "obsCount": 422
+  },
+  {
+    "scientificName": "Cicindela campestris",
+    "swedishName": "Grön sandjägare",
+    "genusName": "Cicindela",
+    "familyName": "Cicindelidae",
+    "rank": "species",
+    "taxonId": 130143,
+    "obsCount": 419
+  },
+  {
+    "scientificName": "Pieris rapae",
+    "swedishName": "Rovfjäril",
+    "genusName": "Pieris",
+    "familyName": "Pieridae",
+    "rank": "species",
+    "taxonId": 55626,
+    "obsCount": 417
+  }
+]

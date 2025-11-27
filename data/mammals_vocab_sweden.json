@@ -1,0 +1,182 @@
+[
+  {
+    "scientificName": "Capreolus capreolus",
+    "swedishName": "Rådjur",
+    "genusName": "Capreolus",
+    "familyName": "Cervidae",
+    "rank": "species",
+    "taxonId": 42184,
+    "obsCount": 1576
+  },
+  {
+    "scientificName": "Sciurus vulgaris",
+    "swedishName": "ekorre",
+    "genusName": "Sciurus",
+    "familyName": "Sciuridae",
+    "rank": "species",
+    "taxonId": 46001,
+    "obsCount": 1404
+  },
+  {
+    "scientificName": "Alces alces",
+    "swedishName": "Älg",
+    "genusName": "Alces",
+    "familyName": "Cervidae",
+    "rank": "species",
+    "taxonId": 522193,
+    "obsCount": 1088
+  },
+  {
+    "scientificName": "Lepus europaeus",
+    "swedishName": "Fälthare",
+    "genusName": "Lepus",
+    "familyName": "Leporidae",
+    "rank": "species",
+    "taxonId": 43128,
+    "obsCount": 868
+  },
+  {
+    "scientificName": "Rangifer tarandus",
+    "swedishName": "ren",
+    "genusName": "Rangifer",
+    "familyName": "Cervidae",
+    "rank": "species",
+    "taxonId": 42199,
+    "obsCount": 583
+  },
+  {
+    "scientificName": "Erinaceus europaeus",
+    "swedishName": "igelkott",
+    "genusName": "Erinaceus",
+    "familyName": "Erinaceidae",
+    "rank": "species",
+    "taxonId": 43042,
+    "obsCount": 568
+  },
+  {
+    "scientificName": "Oryctolagus cuniculus",
+    "swedishName": "Vildkanin",
+    "genusName": "Oryctolagus",
+    "familyName": "Leporidae",
+    "rank": "species",
+    "taxonId": 43151,
+    "obsCount": 457
+  },
+  {
+    "scientificName": "Vulpes vulpes",
+    "swedishName": "Rödräv",
+    "genusName": "Vulpes",
+    "familyName": "Canidae",
+    "rank": "species",
+    "taxonId": 42069,
+    "obsCount": 423
+  },
+  {
+    "scientificName": "Dama dama",
+    "swedishName": "Dovhjort",
+    "genusName": "Dama",
+    "familyName": "Cervidae",
+    "rank": "species",
+    "taxonId": 42161,
+    "obsCount": 313
+  },
+  {
+    "scientificName": "Castor fiber",
+    "swedishName": "europeisk bäver",
+    "genusName": "Castor",
+    "familyName": "Castoridae",
+    "rank": "species",
+    "taxonId": 43793,
+    "obsCount": 306
+  },
+  {
+    "scientificName": "Sus scrofa",
+    "swedishName": "Vildsvin",
+    "genusName": "Sus",
+    "familyName": "Suidae",
+    "rank": "species",
+    "taxonId": 42134,
+    "obsCount": 184
+  },
+  {
+    "scientificName": "Lepus timidus",
+    "swedishName": "Skogshare",
+    "genusName": "Lepus",
+    "familyName": "Leporidae",
+    "rank": "species",
+    "taxonId": 55908,
+    "obsCount": 184
+  },
+  {
+    "scientificName": "Phoca vitulina",
+    "swedishName": "Knubbsäl",
+    "genusName": "Phoca",
+    "familyName": "Phocidae",
+    "rank": "species",
+    "taxonId": 41708,
+    "obsCount": 175
+  },
+  {
+    "scientificName": "Meles meles",
+    "swedishName": "Grävling",
+    "genusName": "Meles",
+    "familyName": "Mustelidae",
+    "rank": "species",
+    "taxonId": 855297,
+    "obsCount": 173
+  },
+  {
+    "scientificName": "Sorex araneus",
+    "swedishName": "vanlig näbbmus",
+    "genusName": "Sorex",
+    "familyName": "Soricidae",
+    "rank": "species",
+    "taxonId": 46414,
+    "obsCount": 160
+  },
+  {
+    "scientificName": "Neogale vison",
+    "swedishName": "mink",
+    "genusName": "Neogale",
+    "familyName": "Mustelidae",
+    "rank": "species",
+    "taxonId": 1264432,
+    "obsCount": 125
+  },
+  {
+    "scientificName": "Rattus norvegicus",
+    "swedishName": "Brunråtta",
+    "genusName": "Rattus",
+    "familyName": "Muridae",
+    "rank": "species",
+    "taxonId": 44576,
+    "obsCount": 119
+  },
+  {
+    "scientificName": "Halichoerus grypus",
+    "swedishName": "gråsäl",
+    "genusName": "Halichoerus",
+    "familyName": "Phocidae",
+    "rank": "species",
+    "taxonId": 41733,
+    "obsCount": 92
+  },
+  {
+    "scientificName": "Clethrionomys glareolus",
+    "swedishName": "Skogssork",
+    "genusName": "Clethrionomys",
+    "familyName": "Cricetidae",
+    "rank": "species",
+    "taxonId": 1431273,
+    "obsCount": 76
+  },
+  {
+    "scientificName": "Apodemus flavicollis",
+    "swedishName": "större skogsmus",
+    "genusName": "Apodemus",
+    "familyName": "Muridae",
+    "rank": "species",
+    "taxonId": 45550,
+    "obsCount": 64
+  }
+]

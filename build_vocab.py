@@ -13,7 +13,6 @@ import json
 import os
 import time
 from typing import List, Dict, Any
-
 import requests
 
 INAT_BASE = "https://api.inaturalist.org/v1"
@@ -30,7 +29,7 @@ DEFAULT_TOP_N = 100
 
 # Maximum number of pages to fetch per taxon when calling /species_counts
 # Each page contains up to 200 species.
-MAX_SPECIES_PAGES = 5   # adjust as needed
+MAX_SPECIES_PAGES = 3   # adjust as needed
 MAX_RETRIES_PER_REQUEST = 5    # how many times to retry a single page
 INITIAL_BACKOFF_SECONDS = 1.0  # starting wait after first 429
 
@@ -128,6 +127,40 @@ def write_json(data: Any, path: str) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+def fetch_taxon_details(taxon_ids: List[int]) -> Dict[int, Dict[str, Any]]:
+    """
+    Fetch full taxon info (including ancestors with family) for a list of taxon IDs.
+    Uses /v1/taxa/<ids> and returns a dict taxonId -> taxon object.
+
+    Batches in chunks of 30 to avoid URL length / rate issues.
+    """
+    result: Dict[int, Dict[str, Any]] = {}
+    if not taxon_ids:
+        return result
+
+    chunk_size = 30
+
+    for i in range(0, len(taxon_ids), chunk_size):
+        chunk = taxon_ids[i:i + chunk_size]
+        url = f"{INAT_BASE}/taxa/{','.join(str(t) for t in chunk)}"
+        # Use English locale to ensure full ancestor hierarchy is present
+        params = {"locale": "en"}
+
+        print(f"  Enriching taxonomy for taxon_ids {chunk[0]}..{chunk[-1]}")
+
+        resp = requests.get(url, params=params)
+        resp.raise_for_status()
+        data = resp.json()
+
+        for t in data.get("results", []):
+            result[t["id"]] = t
+
+        time.sleep(0.2)  # be kind to API
+
+    return result
+
+
+
 def fetch_species_counts(
     taxon_id: int,
     place_id: int,
@@ -202,87 +235,21 @@ def fetch_species_counts(
 
     return results
 
-
-
-def aggregate_to_genera(
-    species_counts: List[Dict[str, Any]],
-    top_n: int,
-) -> List[Dict[str, Any]]:
+def build_group_vocab_multi_taxa_species(label: str, taxon_ids: list, top_n: int):
     """
-    Aggregate species-level results up to genera.
+    For a given group (e.g. 'insects') defined by one or more higher taxon_ids,
+    fetch species_counts for each taxon_id, merge them, deduplicate by species
+    (taxon.id), and return the top_n species with extra fields:
 
-    species_counts items look like:
-        {
-          "taxon": {...},
-          "count": <int>,
-          ...
-        }
-
-    We derive genus as the first word of taxon.name.
+        scientificName (species),
+        swedishName,
+        genusName,
+        familyName,
+        rank,
+        taxonId,
+        obsCount
     """
-    genus_map: Dict[str, Dict[str, Any]] = {}
-
-    for item in species_counts:
-        taxon = item.get("taxon") or {}
-        count = item.get("count") or 0
-
-        sci = taxon.get("name")
-        if not sci:
-            continue
-
-        # Derive genus naively as first token (works fine for most cases)
-        genus_name = sci.split(" ")[0]
-
-        if genus_name not in genus_map:
-            genus_map[genus_name] = {
-                "scientificName": genus_name,
-                "swedishName": None,
-                "rank": "genus",
-                "taxonId": None,     # we don't have a genus taxon_id here
-                "obsCount": 0,
-            }
-
-        genus_entry = genus_map[genus_name]
-        genus_entry["obsCount"] += int(count)
-
-        # if we don't yet have a Swedish name for this genus, borrow the first
-        # available Swedish species name as a hint (optional)
-        if genus_entry["swedishName"] is None:
-            sw = taxon.get("preferred_common_name")
-            if sw:
-                genus_entry["swedishName"] = sw
-
-    # Sort by obsCount descending and take top_n
-    genera_sorted = sorted(
-        genus_map.values(),
-        key=lambda g: g["obsCount"],
-        reverse=True,
-    )
-
-    return genera_sorted[:top_n]
-
-
-def build_group_vocab(label: str, taxon_id: int, top_n: int) -> List[Dict[str, Any]]:
-    """
-    For a given broad taxon (e.g. Insecta), get species_counts in Sweden,
-    aggregate to genera, and return top_n genera.
-    """
-    species_counts = fetch_species_counts(
-        taxon_id=taxon_id,
-        place_id=SWEDEN_PLACE_ID,
-        per_page=200,
-        locale="sv",
-    )
-
-    print(f"  -> got {len(species_counts)} leaf taxa (species+etc) for {label}")
-
-    top_genera = aggregate_to_genera(species_counts, top_n=top_n)
-    print(f"  -> aggregated to {len(top_genera)} genera (top {top_n})")
-
-    return top_genera
-
-def build_group_vocab_multi_taxa(label: str, taxon_ids: list, top_n: int):
-    all_species_counts = []
+    all_species_counts: List[Dict[str, Any]] = []
 
     for tid in taxon_ids:
         print(f"Fetching species for {label} from taxon_id={tid} ...")
@@ -295,35 +262,95 @@ def build_group_vocab_multi_taxa(label: str, taxon_ids: list, top_n: int):
         print(f"  Got {len(sc)} leaf taxa for taxon_id={tid}")
         all_species_counts.extend(sc)
 
-    # Aggregate everything to genera
-    top_genera = aggregate_to_genera(all_species_counts, top_n=top_n)
-    return top_genera
+    # Deduplicate by species taxonId, keeping the highest count
+    species_map: Dict[int, Dict[str, Any]] = {}  # taxonId -> {"taxon": ..., "count": ...}
 
+    for item in all_species_counts:
+        taxon = item.get("taxon") or {}
+        tid = taxon.get("id")
+        if not tid:
+            continue
+        count = int(item.get("count") or 0)
+
+        existing = species_map.get(tid)
+        if existing is None or count > existing.get("count", 0):
+            species_map[tid] = {
+                "taxon": taxon,
+                "count": count,
+            }
+
+    species_list = list(species_map.values())
+    species_list.sort(key=lambda x: x["count"], reverse=True)
+    top_species = species_list[:top_n]
+
+    # Enrich with full taxonomy (ancestors incl. family) using /v1/taxa
+    taxon_ids_list = [
+        e["taxon"]["id"] for e in top_species if e["taxon"].get("id") is not None
+    ]
+    tax_details = fetch_taxon_details(taxon_ids_list)
+
+    vocab: List[Dict[str, Any]] = []
+
+    for entry in top_species:
+        taxon = entry["taxon"]
+        tid = taxon.get("id")
+        if not tid:
+            continue
+
+        sci = taxon.get("name")
+        if not sci:
+            continue
+
+        sw = taxon.get("preferred_common_name")
+        genus_name = sci.split(" ")[0]
+
+        # Use enriched taxon if available (for ancestors/family)
+        enriched = tax_details.get(tid, taxon)
+        ancestors = enriched.get("ancestors") or []
+
+        family_name = None
+        for anc in ancestors:
+            if anc.get("rank") == "family":
+                family_name = anc.get("name")
+                break
+
+        vocab.append(
+            {
+                "scientificName": sci,          # species binomial
+                "swedishName": sw,
+                "genusName": genus_name,
+                "familyName": family_name,
+                "rank": enriched.get("rank"),
+                "taxonId": tid,
+                "obsCount": entry["count"],
+            }
+        )
+
+    return vocab
 
 # -------------------------------------------------------------------
 # Main
 # -------------------------------------------------------------------
-
 def main() -> None:
     ensure_output_dir(OUTPUT_DIR)
 
     for cfg in TAXA_CONFIG:
         label = cfg["label"]
-        taxon_ids = cfg["taxon_ids"]   # <-- FIX: plural
+        taxon_ids = cfg["taxon_ids"]
         top_n = cfg.get("top_n", DEFAULT_TOP_N)
 
-        print(f"\n=== Fetching top {top_n} genera for group '{label}' ===")
+        print(f"\n=== Fetching top {top_n} species for group '{label}' ===")
 
-        genera = build_group_vocab_multi_taxa(
+        vocab = build_group_vocab_multi_taxa_species(
             label=label,
-            taxon_ids=taxon_ids,      # <-- FIX: pass the plural variable
+            taxon_ids=taxon_ids,
             top_n=top_n,
         )
 
-        out_path = os.path.join(OUTPUT_DIR, f"{label}_genera_sweden.json")
-        write_json(genera, out_path)
+        out_path = os.path.join(OUTPUT_DIR, f"{label}_vocab_sweden.json")
+        write_json(vocab, out_path)
 
-        print(f"  -> wrote {len(genera)} entries to {out_path}")
+        print(f"  -> wrote {len(vocab)} entries to {out_path}")
 
     print("\nDone. Commit the JSON files in 'data/' to your GitHub repo.")
 

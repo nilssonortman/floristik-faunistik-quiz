@@ -1,0 +1,902 @@
+[
+  {
+    "scientificName": "Vaccinium vitis-idaea",
+    "swedishName": "Lingon",
+    "genusName": "Vaccinium",
+    "familyName": "Ericaceae",
+    "rank": "species",
+    "taxonId": 56312,
+    "obsCount": 2188
+  },
+  {
+    "scientificName": "Vaccinium myrtillus",
+    "swedishName": "Blåbär",
+    "genusName": "Vaccinium",
+    "familyName": "Ericaceae",
+    "rank": "species",
+    "taxonId": 127029,
+    "obsCount": 2148
+  },
+  {
+    "scientificName": "Achillea millefolium",
+    "swedishName": "röllika",
+    "genusName": "Achillea",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 52821,
+    "obsCount": 2135
+  },
+  {
+    "scientificName": "Calluna vulgaris",
+    "swedishName": "Ljung",
+    "genusName": "Calluna",
+    "familyName": "Ericaceae",
+    "rank": "species",
+    "taxonId": 119450,
+    "obsCount": 1994
+  },
+  {
+    "scientificName": "Chamaenerion angustifolium",
+    "swedishName": "mjölke",
+    "genusName": "Chamaenerion",
+    "familyName": "Onagraceae",
+    "rank": "species",
+    "taxonId": 564969,
+    "obsCount": 1985
+  },
+  {
+    "scientificName": "Anemonoides nemorosa",
+    "swedishName": "vitsippa",
+    "genusName": "Anemonoides",
+    "familyName": "Ranunculaceae",
+    "rank": "species",
+    "taxonId": 950603,
+    "obsCount": 1950
+  },
+  {
+    "scientificName": "Juniperus communis",
+    "swedishName": "En",
+    "genusName": "Juniperus",
+    "familyName": "Cupressaceae",
+    "rank": "species",
+    "taxonId": 58725,
+    "obsCount": 1687
+  },
+  {
+    "scientificName": "Sorbus aucuparia",
+    "swedishName": "rönn",
+    "genusName": "Sorbus",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 56063,
+    "obsCount": 1681
+  },
+  {
+    "scientificName": "Pinus sylvestris",
+    "swedishName": "Tall",
+    "genusName": "Pinus",
+    "familyName": "Pinaceae",
+    "rank": "species",
+    "taxonId": 58722,
+    "obsCount": 1624
+  },
+  {
+    "scientificName": "Hepatica nobilis",
+    "swedishName": "Blåsippa",
+    "genusName": "Hepatica",
+    "familyName": "Ranunculaceae",
+    "rank": "species",
+    "taxonId": 639660,
+    "obsCount": 1569
+  },
+  {
+    "scientificName": "Lotus corniculatus",
+    "swedishName": "Käringtand",
+    "genusName": "Lotus",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 47435,
+    "obsCount": 1546
+  },
+  {
+    "scientificName": "Polypodium vulgare",
+    "swedishName": "Stensöta",
+    "genusName": "Polypodium",
+    "familyName": "Polypodiaceae",
+    "rank": "species",
+    "taxonId": 127079,
+    "obsCount": 1465
+  },
+  {
+    "scientificName": "Melampyrum pratense",
+    "swedishName": "Ängskovall",
+    "genusName": "Melampyrum",
+    "familyName": "Orobanchaceae",
+    "rank": "species",
+    "taxonId": 60076,
+    "obsCount": 1428
+  },
+  {
+    "scientificName": "Vicia cracca",
+    "swedishName": "Kråkvicker",
+    "genusName": "Vicia",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 52471,
+    "obsCount": 1397
+  },
+  {
+    "scientificName": "Solidago virgaurea",
+    "swedishName": "Gullris",
+    "genusName": "Solidago",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 118850,
+    "obsCount": 1396
+  },
+  {
+    "scientificName": "Tanacetum vulgare",
+    "swedishName": "Renfana",
+    "genusName": "Tanacetum",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 55971,
+    "obsCount": 1394
+  },
+  {
+    "scientificName": "Geranium robertianum",
+    "swedishName": "Stinknäva",
+    "genusName": "Geranium",
+    "familyName": "Geraniaceae",
+    "rank": "species",
+    "taxonId": 55925,
+    "obsCount": 1376
+  },
+  {
+    "scientificName": "Echium vulgare",
+    "swedishName": "Blåeld",
+    "genusName": "Echium",
+    "familyName": "Boraginaceae",
+    "rank": "species",
+    "taxonId": 56174,
+    "obsCount": 1360
+  },
+  {
+    "scientificName": "Linaria vulgaris",
+    "swedishName": "Gulsporre",
+    "genusName": "Linaria",
+    "familyName": "Plantaginaceae",
+    "rank": "species",
+    "taxonId": 50790,
+    "obsCount": 1314
+  },
+  {
+    "scientificName": "Quercus robur",
+    "swedishName": "Ek",
+    "genusName": "Quercus",
+    "familyName": "Fagaceae",
+    "rank": "species",
+    "taxonId": 56133,
+    "obsCount": 1306
+  },
+  {
+    "scientificName": "Filipendula ulmaria",
+    "swedishName": "Älggräs",
+    "genusName": "Filipendula",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 63134,
+    "obsCount": 1298
+  },
+  {
+    "scientificName": "Geranium sylvaticum",
+    "swedishName": "Midsommarblomster",
+    "genusName": "Geranium",
+    "familyName": "Geraniaceae",
+    "rank": "species",
+    "taxonId": 85429,
+    "obsCount": 1277
+  },
+  {
+    "scientificName": "Veronica chamaedrys",
+    "swedishName": "Teveronika",
+    "genusName": "Veronica",
+    "familyName": "Plantaginaceae",
+    "rank": "species",
+    "taxonId": 51610,
+    "obsCount": 1263
+  },
+  {
+    "scientificName": "Trifolium pratense",
+    "swedishName": "Rödklöver",
+    "genusName": "Trifolium",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 51875,
+    "obsCount": 1209
+  },
+  {
+    "scientificName": "Potentilla erecta",
+    "swedishName": "blodrot",
+    "genusName": "Potentilla",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 132622,
+    "obsCount": 1208
+  },
+  {
+    "scientificName": "Picea abies",
+    "swedishName": "Gran",
+    "genusName": "Picea",
+    "familyName": "Pinaceae",
+    "rank": "species",
+    "taxonId": 63567,
+    "obsCount": 1161
+  },
+  {
+    "scientificName": "Lythrum salicaria",
+    "swedishName": "fackelblomster",
+    "genusName": "Lythrum",
+    "familyName": "Lythraceae",
+    "rank": "species",
+    "taxonId": 61321,
+    "obsCount": 1156
+  },
+  {
+    "scientificName": "Tussilago farfara",
+    "swedishName": "Tussilago",
+    "genusName": "Tussilago",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 56222,
+    "obsCount": 1150
+  },
+  {
+    "scientificName": "Bellis perennis",
+    "swedishName": "tusensköna",
+    "genusName": "Bellis",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 55563,
+    "obsCount": 1148
+  },
+  {
+    "scientificName": "Lupinus polyphyllus",
+    "swedishName": "blomsterlupin",
+    "genusName": "Lupinus",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 59549,
+    "obsCount": 1145
+  },
+  {
+    "scientificName": "Urtica dioica",
+    "swedishName": "brännässla",
+    "genusName": "Urtica",
+    "familyName": "Urticaceae",
+    "rank": "species",
+    "taxonId": 51884,
+    "obsCount": 1138
+  },
+  {
+    "scientificName": "Galium verum",
+    "swedishName": "Gulmåra",
+    "genusName": "Galium",
+    "familyName": "Rubiaceae",
+    "rank": "species",
+    "taxonId": 84328,
+    "obsCount": 1095
+  },
+  {
+    "scientificName": "Convallaria majalis",
+    "swedishName": "Liljekonvalj",
+    "genusName": "Convallaria",
+    "familyName": "Asparagaceae",
+    "rank": "species",
+    "taxonId": 48206,
+    "obsCount": 1089
+  },
+  {
+    "scientificName": "Prunus spinosa",
+    "swedishName": "Slån",
+    "genusName": "Prunus",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 55811,
+    "obsCount": 1088
+  },
+  {
+    "scientificName": "Ficaria verna",
+    "swedishName": "svalört",
+    "genusName": "Ficaria",
+    "familyName": "Ranunculaceae",
+    "rank": "species",
+    "taxonId": 204321,
+    "obsCount": 1086
+  },
+  {
+    "scientificName": "Sedum acre",
+    "swedishName": "gul fetknopp",
+    "genusName": "Sedum",
+    "familyName": "Crassulaceae",
+    "rank": "species",
+    "taxonId": 55734,
+    "obsCount": 1084
+  },
+  {
+    "scientificName": "Primula veris",
+    "swedishName": "Gullviva",
+    "genusName": "Primula",
+    "familyName": "Primulaceae",
+    "rank": "species",
+    "taxonId": 55819,
+    "obsCount": 1077
+  },
+  {
+    "scientificName": "Acer platanoides",
+    "swedishName": "skogslönn",
+    "genusName": "Acer",
+    "familyName": "Sapindaceae",
+    "rank": "species",
+    "taxonId": 54763,
+    "obsCount": 1070
+  },
+  {
+    "scientificName": "Fragaria vesca",
+    "swedishName": "smultron",
+    "genusName": "Fragaria",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 50298,
+    "obsCount": 1058
+  },
+  {
+    "scientificName": "Lysimachia europaea",
+    "swedishName": "skogsstjärna",
+    "genusName": "Lysimachia",
+    "familyName": "Primulaceae",
+    "rank": "species",
+    "taxonId": 716947,
+    "obsCount": 1053
+  },
+  {
+    "scientificName": "Viola tricolor",
+    "swedishName": "Styvmorsviol",
+    "genusName": "Viola",
+    "familyName": "Violaceae",
+    "rank": "species",
+    "taxonId": 55739,
+    "obsCount": 1041
+  },
+  {
+    "scientificName": "Hylotelephium maximum",
+    "swedishName": "vanlig kärleksört",
+    "genusName": "Hylotelephium",
+    "familyName": "Crassulaceae",
+    "rank": "species",
+    "taxonId": 775404,
+    "obsCount": 1030
+  },
+  {
+    "scientificName": "Knautia arvensis",
+    "swedishName": "Åkervädd",
+    "genusName": "Knautia",
+    "familyName": "Caprifoliaceae",
+    "rank": "species",
+    "taxonId": 129115,
+    "obsCount": 1017
+  },
+  {
+    "scientificName": "Populus tremula",
+    "swedishName": "Asp",
+    "genusName": "Populus",
+    "familyName": "Salicaceae",
+    "rank": "species",
+    "taxonId": 47571,
+    "obsCount": 1004
+  },
+  {
+    "scientificName": "Lathyrus linifolius",
+    "swedishName": "Gökärt",
+    "genusName": "Lathyrus",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 85072,
+    "obsCount": 999
+  },
+  {
+    "scientificName": "Oxalis acetosella",
+    "swedishName": "harsyra",
+    "genusName": "Oxalis",
+    "familyName": "Oxalidaceae",
+    "rank": "species",
+    "taxonId": 69624,
+    "obsCount": 986
+  },
+  {
+    "scientificName": "Empetrum nigrum",
+    "swedishName": "kråkbär",
+    "genusName": "Empetrum",
+    "familyName": "Ericaceae",
+    "rank": "species",
+    "taxonId": 76812,
+    "obsCount": 985
+  },
+  {
+    "scientificName": "Prunus padus",
+    "swedishName": "hägg",
+    "genusName": "Prunus",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 143793,
+    "obsCount": 978
+  },
+  {
+    "scientificName": "Trifolium repens",
+    "swedishName": "Vitklöver",
+    "genusName": "Trifolium",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 55745,
+    "obsCount": 976
+  },
+  {
+    "scientificName": "Armeria maritima",
+    "swedishName": "Trift",
+    "genusName": "Armeria",
+    "familyName": "Plumbaginaceae",
+    "rank": "species",
+    "taxonId": 60476,
+    "obsCount": 969
+  },
+  {
+    "scientificName": "Cirsium arvense",
+    "swedishName": "Åkertistel",
+    "genusName": "Cirsium",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 60132,
+    "obsCount": 962
+  },
+  {
+    "scientificName": "Anthriscus sylvestris",
+    "swedishName": "Hundkäx",
+    "genusName": "Anthriscus",
+    "familyName": "Apiaceae",
+    "rank": "species",
+    "taxonId": 124544,
+    "obsCount": 941
+  },
+  {
+    "scientificName": "Corylus avellana",
+    "swedishName": "Hassel",
+    "genusName": "Corylus",
+    "familyName": "Betulaceae",
+    "rank": "species",
+    "taxonId": 54491,
+    "obsCount": 940
+  },
+  {
+    "scientificName": "Prunella vulgaris",
+    "swedishName": "Brunört",
+    "genusName": "Prunella",
+    "familyName": "Lamiaceae",
+    "rank": "species",
+    "taxonId": 52764,
+    "obsCount": 931
+  },
+  {
+    "scientificName": "Ranunculus acris",
+    "swedishName": "vanlig smörblomma",
+    "genusName": "Ranunculus",
+    "familyName": "Ranunculaceae",
+    "rank": "species",
+    "taxonId": 56064,
+    "obsCount": 929
+  },
+  {
+    "scientificName": "Caltha palustris",
+    "swedishName": "Kabbeleka",
+    "genusName": "Caltha",
+    "familyName": "Ranunculaceae",
+    "rank": "species",
+    "taxonId": 56224,
+    "obsCount": 921
+  },
+  {
+    "scientificName": "Dactylorhiza maculata",
+    "swedishName": "Fläcknycklar",
+    "genusName": "Dactylorhiza",
+    "familyName": "Orchidaceae",
+    "rank": "species",
+    "taxonId": 82159,
+    "obsCount": 921
+  },
+  {
+    "scientificName": "Pilosella officinarum",
+    "swedishName": "Gråfibbla",
+    "genusName": "Pilosella",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 402509,
+    "obsCount": 916
+  },
+  {
+    "scientificName": "Potentilla argentea",
+    "swedishName": "Femfingerört",
+    "genusName": "Potentilla",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 124552,
+    "obsCount": 915
+  },
+  {
+    "scientificName": "Rosa rugosa",
+    "swedishName": "Vresros",
+    "genusName": "Rosa",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 83653,
+    "obsCount": 910
+  },
+  {
+    "scientificName": "Stellaria graminea",
+    "swedishName": "grässtjärnblomma",
+    "genusName": "Stellaria",
+    "familyName": "Caryophyllaceae",
+    "rank": "species",
+    "taxonId": 61948,
+    "obsCount": 907
+  },
+  {
+    "scientificName": "Silene dioica",
+    "swedishName": "rödblära",
+    "genusName": "Silene",
+    "familyName": "Caryophyllaceae",
+    "rank": "species",
+    "taxonId": 55759,
+    "obsCount": 889
+  },
+  {
+    "scientificName": "Achillea ptarmica",
+    "swedishName": "Nysört",
+    "genusName": "Achillea",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 54055,
+    "obsCount": 888
+  },
+  {
+    "scientificName": "Lysimachia vulgaris",
+    "swedishName": "Videört",
+    "genusName": "Lysimachia",
+    "familyName": "Primulaceae",
+    "rank": "species",
+    "taxonId": 62338,
+    "obsCount": 882
+  },
+  {
+    "scientificName": "Hieracium umbellatum",
+    "swedishName": "flockfibbla",
+    "genusName": "Hieracium",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 55909,
+    "obsCount": 852
+  },
+  {
+    "scientificName": "Vaccinium uliginosum",
+    "swedishName": "Odon",
+    "genusName": "Vaccinium",
+    "familyName": "Ericaceae",
+    "rank": "species",
+    "taxonId": 64714,
+    "obsCount": 851
+  },
+  {
+    "scientificName": "Chelidonium majus",
+    "swedishName": "Skelört",
+    "genusName": "Chelidonium",
+    "familyName": "Papaveraceae",
+    "rank": "species",
+    "taxonId": 55757,
+    "obsCount": 850
+  },
+  {
+    "scientificName": "Betula pendula",
+    "swedishName": "Vårtbjörk",
+    "genusName": "Betula",
+    "familyName": "Betulaceae",
+    "rank": "species",
+    "taxonId": 83992,
+    "obsCount": 849
+  },
+  {
+    "scientificName": "Leucanthemum vulgare",
+    "swedishName": "Prästkrage",
+    "genusName": "Leucanthemum",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 56057,
+    "obsCount": 846
+  },
+  {
+    "scientificName": "Viscaria vulgaris",
+    "swedishName": "Tjärblomster",
+    "genusName": "Viscaria",
+    "familyName": "Caryophyllaceae",
+    "rank": "species",
+    "taxonId": 741459,
+    "obsCount": 843
+  },
+  {
+    "scientificName": "Spinulum annotinum",
+    "swedishName": "Revlummer",
+    "genusName": "Spinulum",
+    "familyName": "Lycopodiaceae",
+    "rank": "species",
+    "taxonId": 204168,
+    "obsCount": 833
+  },
+  {
+    "scientificName": "Geum rivale",
+    "swedishName": "Humleblomster",
+    "genusName": "Geum",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 55750,
+    "obsCount": 828
+  },
+  {
+    "scientificName": "Equisetum sylvaticum",
+    "swedishName": "Skogsfräken",
+    "genusName": "Equisetum",
+    "familyName": "Equisetaceae",
+    "rank": "species",
+    "taxonId": 118537,
+    "obsCount": 817
+  },
+  {
+    "scientificName": "Artemisia vulgaris",
+    "swedishName": "Gråbo",
+    "genusName": "Artemisia",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 52856,
+    "obsCount": 813
+  },
+  {
+    "scientificName": "Alnus glutinosa",
+    "swedishName": "Klibbal",
+    "genusName": "Alnus",
+    "familyName": "Betulaceae",
+    "rank": "species",
+    "taxonId": 966205,
+    "obsCount": 812
+  },
+  {
+    "scientificName": "Fagus sylvatica",
+    "swedishName": "Bok",
+    "genusName": "Fagus",
+    "familyName": "Fagaceae",
+    "rank": "species",
+    "taxonId": 54227,
+    "obsCount": 811
+  },
+  {
+    "scientificName": "Alliaria petiolata",
+    "swedishName": "Löktrav",
+    "genusName": "Alliaria",
+    "familyName": "Brassicaceae",
+    "rank": "species",
+    "taxonId": 56061,
+    "obsCount": 809
+  },
+  {
+    "scientificName": "Rubus idaeus",
+    "swedishName": "Hallon",
+    "genusName": "Rubus",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 54436,
+    "obsCount": 804
+  },
+  {
+    "scientificName": "Maianthemum bifolium",
+    "swedishName": "Ekorrbär",
+    "genusName": "Maianthemum",
+    "familyName": "Asparagaceae",
+    "rank": "species",
+    "taxonId": 50247,
+    "obsCount": 798
+  },
+  {
+    "scientificName": "Fraxinus excelsior",
+    "swedishName": "Ask",
+    "genusName": "Fraxinus",
+    "familyName": "Oleaceae",
+    "rank": "species",
+    "taxonId": 125440,
+    "obsCount": 795
+  },
+  {
+    "scientificName": "Plantago lanceolata",
+    "swedishName": "Svartkämpar",
+    "genusName": "Plantago",
+    "familyName": "Plantaginaceae",
+    "rank": "species",
+    "taxonId": 53178,
+    "obsCount": 789
+  },
+  {
+    "scientificName": "Digitalis purpurea",
+    "swedishName": "Fingerborgsblomma",
+    "genusName": "Digitalis",
+    "familyName": "Plantaginaceae",
+    "rank": "species",
+    "taxonId": 53983,
+    "obsCount": 788
+  },
+  {
+    "scientificName": "Campanula persicifolia",
+    "swedishName": "stor blåklocka",
+    "genusName": "Campanula",
+    "familyName": "Campanulaceae",
+    "rank": "species",
+    "taxonId": 159764,
+    "obsCount": 786
+  },
+  {
+    "scientificName": "Centaurea jacea",
+    "swedishName": "Rödklint",
+    "genusName": "Centaurea",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 55713,
+    "obsCount": 779
+  },
+  {
+    "scientificName": "Trifolium arvense",
+    "swedishName": "Harklöver",
+    "genusName": "Trifolium",
+    "familyName": "Fabaceae",
+    "rank": "species",
+    "taxonId": 79408,
+    "obsCount": 774
+  },
+  {
+    "scientificName": "Scandosorbus intermedia",
+    "swedishName": "Oxel",
+    "genusName": "Scandosorbus",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 1277895,
+    "obsCount": 767
+  },
+  {
+    "scientificName": "Glechoma hederacea",
+    "swedishName": "Jordreva",
+    "genusName": "Glechoma",
+    "familyName": "Lamiaceae",
+    "rank": "species",
+    "taxonId": 55830,
+    "obsCount": 760
+  },
+  {
+    "scientificName": "Frangula alnus",
+    "swedishName": "brakved",
+    "genusName": "Frangula",
+    "familyName": "Rhamnaceae",
+    "rank": "species",
+    "taxonId": 55972,
+    "obsCount": 758
+  },
+  {
+    "scientificName": "Hypericum perforatum",
+    "swedishName": "Äkta johannesört",
+    "genusName": "Hypericum",
+    "familyName": "Hypericaceae",
+    "rank": "species",
+    "taxonId": 56077,
+    "obsCount": 751
+  },
+  {
+    "scientificName": "Taraxacum officinale",
+    "swedishName": "vanlig maskros",
+    "genusName": "Taraxacum",
+    "familyName": "Asteraceae",
+    "rank": "species",
+    "taxonId": 47602,
+    "obsCount": 750
+  },
+  {
+    "scientificName": "Salix lanata",
+    "swedishName": "ullvide",
+    "genusName": "Salix",
+    "familyName": "Salicaceae",
+    "rank": "species",
+    "taxonId": 324812,
+    "obsCount": 750
+  },
+  {
+    "scientificName": "Dianthus deltoides",
+    "swedishName": "Backnejlika",
+    "genusName": "Dianthus",
+    "familyName": "Caryophyllaceae",
+    "rank": "species",
+    "taxonId": 76647,
+    "obsCount": 748
+  },
+  {
+    "scientificName": "Silene uniflora",
+    "swedishName": "strandglim",
+    "genusName": "Silene",
+    "familyName": "Caryophyllaceae",
+    "rank": "species",
+    "taxonId": 118545,
+    "obsCount": 747
+  },
+  {
+    "scientificName": "Salix caprea",
+    "swedishName": "sälg",
+    "genusName": "Salix",
+    "familyName": "Salicaceae",
+    "rank": "species",
+    "taxonId": 55846,
+    "obsCount": 740
+  },
+  {
+    "scientificName": "Sambucus racemosa",
+    "swedishName": "druvfläder",
+    "genusName": "Sambucus",
+    "familyName": "Viburnaceae",
+    "rank": "species",
+    "taxonId": 57824,
+    "obsCount": 737
+  },
+  {
+    "scientificName": "Aegopodium podagraria",
+    "swedishName": "Kirskål",
+    "genusName": "Aegopodium",
+    "familyName": "Apiaceae",
+    "rank": "species",
+    "taxonId": 51741,
+    "obsCount": 735
+  },
+  {
+    "scientificName": "Plantago major",
+    "swedishName": "groblad",
+    "genusName": "Plantago",
+    "familyName": "Plantaginaceae",
+    "rank": "species",
+    "taxonId": 58961,
+    "obsCount": 729
+  },
+  {
+    "scientificName": "Drosera rotundifolia",
+    "swedishName": "Rundsileshår",
+    "genusName": "Drosera",
+    "familyName": "Droseraceae",
+    "rank": "species",
+    "taxonId": 52658,
+    "obsCount": 727
+  },
+  {
+    "scientificName": "Rubus chamaemorus",
+    "swedishName": "Hjortron",
+    "genusName": "Rubus",
+    "familyName": "Rosaceae",
+    "rank": "species",
+    "taxonId": 153003,
+    "obsCount": 725
+  },
+  {
+    "scientificName": "Melampyrum nemorosum",
+    "swedishName": "Natt och dag",
+    "genusName": "Melampyrum",
+    "familyName": "Orobanchaceae",
+    "rank": "species",
+    "taxonId": 57500,
+    "obsCount": 720
+  }
+]

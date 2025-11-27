@@ -1,0 +1,452 @@
+[
+  {
+    "scientificName": "Anas platyrhynchos",
+    "swedishName": "Gräsand",
+    "genusName": "Anas",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 6930,
+    "obsCount": 2480
+  },
+  {
+    "scientificName": "Motacilla alba",
+    "swedishName": "Sädesärla",
+    "genusName": "Motacilla",
+    "familyName": "Motacillidae",
+    "rank": "species",
+    "taxonId": 13695,
+    "obsCount": 1838
+  },
+  {
+    "scientificName": "Coloeus monedula",
+    "swedishName": "Kaja",
+    "genusName": "Coloeus",
+    "familyName": "Corvidae",
+    "rank": "species",
+    "taxonId": 336399,
+    "obsCount": 1695
+  },
+  {
+    "scientificName": "Branta leucopsis",
+    "swedishName": "Vitkindad Gås",
+    "genusName": "Branta",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 7101,
+    "obsCount": 1618
+  },
+  {
+    "scientificName": "Cygnus olor",
+    "swedishName": "Knölsvan",
+    "genusName": "Cygnus",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 6921,
+    "obsCount": 1563
+  },
+  {
+    "scientificName": "Pica pica",
+    "swedishName": "Skata",
+    "genusName": "Pica",
+    "familyName": "Corvidae",
+    "rank": "species",
+    "taxonId": 891696,
+    "obsCount": 1514
+  },
+  {
+    "scientificName": "Turdus merula",
+    "swedishName": "Koltrast",
+    "genusName": "Turdus",
+    "familyName": "Turdidae",
+    "rank": "species",
+    "taxonId": 12716,
+    "obsCount": 1506
+  },
+  {
+    "scientificName": "Chroicocephalus ridibundus",
+    "swedishName": "Skrattmås",
+    "genusName": "Chroicocephalus",
+    "familyName": "Laridae",
+    "rank": "species",
+    "taxonId": 144510,
+    "obsCount": 1487
+  },
+  {
+    "scientificName": "Corvus cornix",
+    "swedishName": "Kråka",
+    "genusName": "Corvus",
+    "familyName": "Corvidae",
+    "rank": "species",
+    "taxonId": 144757,
+    "obsCount": 1464
+  },
+  {
+    "scientificName": "Dendrocopos major",
+    "swedishName": "Större Hackspett",
+    "genusName": "Dendrocopos",
+    "familyName": "Picidae",
+    "rank": "species",
+    "taxonId": 17871,
+    "obsCount": 1382
+  },
+  {
+    "scientificName": "Larus canus",
+    "swedishName": "Fiskmås",
+    "genusName": "Larus",
+    "familyName": "Laridae",
+    "rank": "species",
+    "taxonId": 4356,
+    "obsCount": 1334
+  },
+  {
+    "scientificName": "Turdus pilaris",
+    "swedishName": "Björktrast",
+    "genusName": "Turdus",
+    "familyName": "Turdidae",
+    "rank": "species",
+    "taxonId": 12707,
+    "obsCount": 1324
+  },
+  {
+    "scientificName": "Parus major",
+    "swedishName": "Talgoxe",
+    "genusName": "Parus",
+    "familyName": "Paridae",
+    "rank": "species",
+    "taxonId": 203153,
+    "obsCount": 1322
+  },
+  {
+    "scientificName": "Ardea cinerea",
+    "swedishName": "Gråhäger",
+    "genusName": "Ardea",
+    "familyName": "Ardeidae",
+    "rank": "species",
+    "taxonId": 4954,
+    "obsCount": 1208
+  },
+  {
+    "scientificName": "Phalacrocorax carbo",
+    "swedishName": "Storskarv",
+    "genusName": "Phalacrocorax",
+    "familyName": "Phalacrocoracidae",
+    "rank": "species",
+    "taxonId": 4270,
+    "obsCount": 1159
+  },
+  {
+    "scientificName": "Branta canadensis",
+    "swedishName": "Kanadagås",
+    "genusName": "Branta",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 7089,
+    "obsCount": 1147
+  },
+  {
+    "scientificName": "Bucephala clangula",
+    "swedishName": "Knipa",
+    "genusName": "Bucephala",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 6990,
+    "obsCount": 1132
+  },
+  {
+    "scientificName": "Cyanistes caeruleus",
+    "swedishName": "Blåmes",
+    "genusName": "Cyanistes",
+    "familyName": "Paridae",
+    "rank": "species",
+    "taxonId": 144849,
+    "obsCount": 1129
+  },
+  {
+    "scientificName": "Columba palumbus",
+    "swedishName": "Ringduva",
+    "genusName": "Columba",
+    "familyName": "Columbidae",
+    "rank": "species",
+    "taxonId": 3048,
+    "obsCount": 1114
+  },
+  {
+    "scientificName": "Anser anser",
+    "swedishName": "Grågås",
+    "genusName": "Anser",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 7018,
+    "obsCount": 1107
+  },
+  {
+    "scientificName": "Fulica atra",
+    "swedishName": "Sothöna",
+    "genusName": "Fulica",
+    "familyName": "Rallidae",
+    "rank": "species",
+    "taxonId": 482,
+    "obsCount": 1074
+  },
+  {
+    "scientificName": "Fringilla coelebs",
+    "swedishName": "Bofink",
+    "genusName": "Fringilla",
+    "familyName": "Fringillidae",
+    "rank": "species",
+    "taxonId": 10070,
+    "obsCount": 1018
+  },
+  {
+    "scientificName": "Passer domesticus",
+    "swedishName": "Gråsparv",
+    "genusName": "Passer",
+    "familyName": "Passeridae",
+    "rank": "species",
+    "taxonId": 13858,
+    "obsCount": 986
+  },
+  {
+    "scientificName": "Grus grus",
+    "swedishName": "Trana",
+    "genusName": "Grus",
+    "familyName": "Gruidae",
+    "rank": "species",
+    "taxonId": 41,
+    "obsCount": 984
+  },
+  {
+    "scientificName": "Sitta europaea",
+    "swedishName": "Nötväcka",
+    "genusName": "Sitta",
+    "familyName": "Sittidae",
+    "rank": "species",
+    "taxonId": 14824,
+    "obsCount": 984
+  },
+  {
+    "scientificName": "Mergus merganser",
+    "swedishName": "Storskrake",
+    "genusName": "Mergus",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 7004,
+    "obsCount": 957
+  },
+  {
+    "scientificName": "Larus argentatus",
+    "swedishName": "Gråtrut",
+    "genusName": "Larus",
+    "familyName": "Laridae",
+    "rank": "species",
+    "taxonId": 204533,
+    "obsCount": 856
+  },
+  {
+    "scientificName": "Erithacus rubecula",
+    "swedishName": "Rödhake",
+    "genusName": "Erithacus",
+    "familyName": "Muscicapidae",
+    "rank": "species",
+    "taxonId": 13094,
+    "obsCount": 753
+  },
+  {
+    "scientificName": "Aythya fuligula",
+    "swedishName": "Vigg",
+    "genusName": "Aythya",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 7046,
+    "obsCount": 680
+  },
+  {
+    "scientificName": "Haematopus ostralegus",
+    "swedishName": "Strandskata",
+    "genusName": "Haematopus",
+    "familyName": "Haematopodidae",
+    "rank": "species",
+    "taxonId": 4843,
+    "obsCount": 675
+  },
+  {
+    "scientificName": "Passer montanus",
+    "swedishName": "Pilfink",
+    "genusName": "Passer",
+    "familyName": "Passeridae",
+    "rank": "species",
+    "taxonId": 13851,
+    "obsCount": 656
+  },
+  {
+    "scientificName": "Milvus milvus",
+    "swedishName": "Röd glada",
+    "genusName": "Milvus",
+    "familyName": "Accipitridae",
+    "rank": "species",
+    "taxonId": 5267,
+    "obsCount": 649
+  },
+  {
+    "scientificName": "Podiceps cristatus",
+    "swedishName": "Skäggdopping",
+    "genusName": "Podiceps",
+    "familyName": "Podicipedidae",
+    "rank": "species",
+    "taxonId": 4208,
+    "obsCount": 647
+  },
+  {
+    "scientificName": "Vanellus vanellus",
+    "swedishName": "Tofsvipa",
+    "genusName": "Vanellus",
+    "familyName": "Charadriidae",
+    "rank": "species",
+    "taxonId": 4857,
+    "obsCount": 630
+  },
+  {
+    "scientificName": "Haliaeetus albicilla",
+    "swedishName": "Havsörn",
+    "genusName": "Haliaeetus",
+    "familyName": "Accipitridae",
+    "rank": "species",
+    "taxonId": 5309,
+    "obsCount": 621
+  },
+  {
+    "scientificName": "Cygnus cygnus",
+    "swedishName": "Sångsvan",
+    "genusName": "Cygnus",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 6916,
+    "obsCount": 615
+  },
+  {
+    "scientificName": "Somateria mollissima",
+    "swedishName": "Ejder",
+    "genusName": "Somateria",
+    "familyName": "Anatidae",
+    "rank": "species",
+    "taxonId": 7024,
+    "obsCount": 597
+  },
+  {
+    "scientificName": "Columba livia",
+    "swedishName": "Klippduva",
+    "genusName": "Columba",
+    "familyName": "Columbidae",
+    "rank": "species",
+    "taxonId": 3017,
+    "obsCount": 581
+  },
+  {
+    "scientificName": "Sturnus vulgaris",
+    "swedishName": "Stare",
+    "genusName": "Sturnus",
+    "familyName": "Sturnidae",
+    "rank": "species",
+    "taxonId": 14850,
+    "obsCount": 577
+  },
+  {
+    "scientificName": "Buteo buteo",
+    "swedishName": "Ormvråk",
+    "genusName": "Buteo",
+    "familyName": "Accipitridae",
+    "rank": "species",
+    "taxonId": 204472,
+    "obsCount": 564
+  },
+  {
+    "scientificName": "Larus fuscus",
+    "swedishName": "Silltrut",
+    "genusName": "Larus",
+    "familyName": "Laridae",
+    "rank": "species",
+    "taxonId": 4381,
+    "obsCount": 548
+  },
+  {
+    "scientificName": "Sterna hirundo",
+    "swedishName": "Fisktärna",
+    "genusName": "Sterna",
+    "familyName": "Laridae",
+    "rank": "species",
+    "taxonId": 4450,
+    "obsCount": 523
+  },
+  {
+    "scientificName": "Chloris chloris",
+    "swedishName": "Grönfink",
+    "genusName": "Chloris",
+    "familyName": "Fringillidae",
+    "rank": "species",
+    "taxonId": 145360,
+    "obsCount": 521
+  },
+  {
+    "scientificName": "Hirundo rustica",
+    "swedishName": "Ladusvala",
+    "genusName": "Hirundo",
+    "familyName": "Hirundinidae",
+    "rank": "species",
+    "taxonId": 11901,
+    "obsCount": 518
+  },
+  {
+    "scientificName": "Oenanthe oenanthe",
+    "swedishName": "Stenskvätta",
+    "genusName": "Oenanthe",
+    "familyName": "Muscicapidae",
+    "rank": "species",
+    "taxonId": 12822,
+    "obsCount": 493
+  },
+  {
+    "scientificName": "Pyrrhula pyrrhula",
+    "swedishName": "Domherre",
+    "genusName": "Pyrrhula",
+    "familyName": "Fringillidae",
+    "rank": "species",
+    "taxonId": 9462,
+    "obsCount": 486
+  },
+  {
+    "scientificName": "Phasianus colchicus",
+    "swedishName": "Fasan",
+    "genusName": "Phasianus",
+    "familyName": "Phasianidae",
+    "rank": "species",
+    "taxonId": 981,
+    "obsCount": 451
+  },
+  {
+    "scientificName": "Emberiza citrinella",
+    "swedishName": "Gulsparv",
+    "genusName": "Emberiza",
+    "familyName": "Emberizidae",
+    "rank": "species",
+    "taxonId": 9195,
+    "obsCount": 450
+  },
+  {
+    "scientificName": "Carduelis carduelis",
+    "swedishName": "Steglits",
+    "genusName": "Carduelis",
+    "familyName": "Fringillidae",
+    "rank": "species",
+    "taxonId": 9398,
+    "obsCount": 450
+  },
+  {
+    "scientificName": "Corvus frugilegus",
+    "swedishName": "Råka",
+    "genusName": "Corvus",
+    "familyName": "Corvidae",
+    "rank": "species",
+    "taxonId": 8029,
+    "obsCount": 437
+  }
+]

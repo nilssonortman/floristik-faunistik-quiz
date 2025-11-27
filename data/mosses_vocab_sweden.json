@@ -1,0 +1,317 @@
+[
+  {
+    "scientificName": "Hypnum cupressiforme",
+    "swedishName": "Cypressfläta",
+    "genusName": "Hypnum",
+    "familyName": "Hypnaceae",
+    "rank": "species",
+    "taxonId": 163992,
+    "obsCount": 674
+  },
+  {
+    "scientificName": "Hylocomium splendens",
+    "swedishName": "husmossa",
+    "genusName": "Hylocomium",
+    "familyName": "Hylocomiaceae",
+    "rank": "species",
+    "taxonId": 122555,
+    "obsCount": 659
+  },
+  {
+    "scientificName": "Polytrichum commune",
+    "swedishName": "stor björnmossa",
+    "genusName": "Polytrichum",
+    "familyName": "Polytrichaceae",
+    "rank": "species",
+    "taxonId": 68293,
+    "obsCount": 447
+  },
+  {
+    "scientificName": "Hylocomiadelphus triquetrus",
+    "swedishName": "kranshakmossa",
+    "genusName": "Hylocomiadelphus",
+    "familyName": "Hylocomiaceae",
+    "rank": "species",
+    "taxonId": 1138381,
+    "obsCount": 447
+  },
+  {
+    "scientificName": "Polytrichum formosum",
+    "swedishName": "skogsbjörnmossa",
+    "genusName": "Polytrichum",
+    "familyName": "Polytrichaceae",
+    "rank": "species",
+    "taxonId": 68290,
+    "obsCount": 428
+  },
+  {
+    "scientificName": "Pleurozium schreberi",
+    "swedishName": "Väggmossa",
+    "genusName": "Pleurozium",
+    "familyName": "Hylocomiaceae",
+    "rank": "species",
+    "taxonId": 130677,
+    "obsCount": 405
+  },
+  {
+    "scientificName": "Dicranum scoparium",
+    "swedishName": "kvastmossa",
+    "genusName": "Dicranum",
+    "familyName": "Dicranaceae",
+    "rank": "species",
+    "taxonId": 123134,
+    "obsCount": 340
+  },
+  {
+    "scientificName": "Leucobryum glaucum",
+    "swedishName": "blåmossa",
+    "genusName": "Leucobryum",
+    "familyName": "Leucobryaceae",
+    "rank": "species",
+    "taxonId": 122658,
+    "obsCount": 339
+  },
+  {
+    "scientificName": "Ptilium crista-castrensis",
+    "swedishName": "Kammossa",
+    "genusName": "Ptilium",
+    "familyName": "Pylaisiaceae",
+    "rank": "species",
+    "taxonId": 136604,
+    "obsCount": 303
+  },
+  {
+    "scientificName": "Mnium hornum",
+    "swedishName": "skuggstjärnmossa",
+    "genusName": "Mnium",
+    "familyName": "Mniaceae",
+    "rank": "species",
+    "taxonId": 165489,
+    "obsCount": 289
+  },
+  {
+    "scientificName": "Rhytidiadelphus squarrosus",
+    "swedishName": "Gräshakmossa",
+    "genusName": "Rhytidiadelphus",
+    "familyName": "Hylocomiaceae",
+    "rank": "species",
+    "taxonId": 123754,
+    "obsCount": 269
+  },
+  {
+    "scientificName": "Plagiomnium undulatum",
+    "swedishName": "vågig praktmossa",
+    "genusName": "Plagiomnium",
+    "familyName": "Mniaceae",
+    "rank": "species",
+    "taxonId": 208078,
+    "obsCount": 264
+  },
+  {
+    "scientificName": "Plagiothecium undulatum",
+    "swedishName": "vågig sidenmossa",
+    "genusName": "Plagiothecium",
+    "familyName": "Plagiotheciaceae",
+    "rank": "species",
+    "taxonId": 123586,
+    "obsCount": 211
+  },
+  {
+    "scientificName": "Polytrichum piliferum",
+    "swedishName": "hårbjörnmossa",
+    "genusName": "Polytrichum",
+    "familyName": "Polytrichaceae",
+    "rank": "species",
+    "taxonId": 67905,
+    "obsCount": 186
+  },
+  {
+    "scientificName": "Polytrichum juniperinum",
+    "swedishName": "Enbjörnmossa",
+    "genusName": "Polytrichum",
+    "familyName": "Polytrichaceae",
+    "rank": "species",
+    "taxonId": 68286,
+    "obsCount": 183
+  },
+  {
+    "scientificName": "Homalothecium sericeum",
+    "swedishName": "guldlockmossa",
+    "genusName": "Homalothecium",
+    "familyName": "Brachytheciaceae",
+    "rank": "species",
+    "taxonId": 123776,
+    "obsCount": 176
+  },
+  {
+    "scientificName": "Hedwigia ciliata",
+    "swedishName": "kakmossa",
+    "genusName": "Hedwigia",
+    "familyName": "Hedwigiaceae",
+    "rank": "species",
+    "taxonId": 163550,
+    "obsCount": 173
+  },
+  {
+    "scientificName": "Radula complanata",
+    "swedishName": "plattsvepemossa",
+    "genusName": "Radula",
+    "familyName": "Radulaceae",
+    "rank": "species",
+    "taxonId": 67842,
+    "obsCount": 173
+  },
+  {
+    "scientificName": "Marchantia polymorpha",
+    "swedishName": "Lungmossa",
+    "genusName": "Marchantia",
+    "familyName": "Marchantiaceae",
+    "rank": "species",
+    "taxonId": 56406,
+    "obsCount": 172
+  },
+  {
+    "scientificName": "Climacium dendroides",
+    "swedishName": "palmmossa",
+    "genusName": "Climacium",
+    "familyName": "Climaciaceae",
+    "rank": "species",
+    "taxonId": 123751,
+    "obsCount": 159
+  },
+  {
+    "scientificName": "Ceratodon purpureus",
+    "swedishName": "brännmossa",
+    "genusName": "Ceratodon",
+    "familyName": "Ditrichaceae",
+    "rank": "species",
+    "taxonId": 123117,
+    "obsCount": 157
+  },
+  {
+    "scientificName": "Ptilidium pulcherrimum",
+    "swedishName": "tät fransmossa",
+    "genusName": "Ptilidium",
+    "familyName": "Ptilidiaceae",
+    "rank": "species",
+    "taxonId": 167558,
+    "obsCount": 151
+  },
+  {
+    "scientificName": "Pseudoscleropodium purum",
+    "swedishName": "Pösmossa",
+    "genusName": "Pseudoscleropodium",
+    "familyName": "Brachytheciaceae",
+    "rank": "species",
+    "taxonId": 123645,
+    "obsCount": 148
+  },
+  {
+    "scientificName": "Thuidium tamariscinum",
+    "swedishName": "stor tujamossa",
+    "genusName": "Thuidium",
+    "familyName": "Thuidiaceae",
+    "rank": "species",
+    "taxonId": 127055,
+    "obsCount": 146
+  },
+  {
+    "scientificName": "Sphagnum capillifolium",
+    "swedishName": "Tallvitmossa",
+    "genusName": "Sphagnum",
+    "familyName": "Sphagnaceae",
+    "rank": "species",
+    "taxonId": 123958,
+    "obsCount": 144
+  },
+  {
+    "scientificName": "Atrichum undulatum",
+    "swedishName": "vågig sågmossa",
+    "genusName": "Atrichum",
+    "familyName": "Polytrichaceae",
+    "rank": "species",
+    "taxonId": 124155,
+    "obsCount": 143
+  },
+  {
+    "scientificName": "Plagiomnium affine",
+    "swedishName": "skogspraktmossa",
+    "genusName": "Plagiomnium",
+    "familyName": "Mniaceae",
+    "rank": "species",
+    "taxonId": 485472,
+    "obsCount": 142
+  },
+  {
+    "scientificName": "Rhytidiadelphus loreus",
+    "swedishName": "västlig hakmossa",
+    "genusName": "Rhytidiadelphus",
+    "familyName": "Hylocomiaceae",
+    "rank": "species",
+    "taxonId": 124422,
+    "obsCount": 141
+  },
+  {
+    "scientificName": "Racomitrium lanuginosum",
+    "swedishName": "grå raggmossa",
+    "genusName": "Racomitrium",
+    "familyName": "Grimmiaceae",
+    "rank": "species",
+    "taxonId": 167684,
+    "obsCount": 140
+  },
+  {
+    "scientificName": "Syntrichia ruralis",
+    "swedishName": "takmossa",
+    "genusName": "Syntrichia",
+    "familyName": "Pottiaceae",
+    "rank": "species",
+    "taxonId": 244075,
+    "obsCount": 132
+  },
+  {
+    "scientificName": "Metzgeria furcata",
+    "swedishName": "bandmossa",
+    "genusName": "Metzgeria",
+    "familyName": "Metzgeriaceae",
+    "rank": "species",
+    "taxonId": 165363,
+    "obsCount": 130
+  },
+  {
+    "scientificName": "Grimmia pulvinata",
+    "swedishName": "hårgrimmia",
+    "genusName": "Grimmia",
+    "familyName": "Grimmiaceae",
+    "rank": "species",
+    "taxonId": 56117,
+    "obsCount": 128
+  },
+  {
+    "scientificName": "Plagiochila asplenioides",
+    "swedishName": "bräkenmossa",
+    "genusName": "Plagiochila",
+    "familyName": "Plagiochilaceae",
+    "rank": "species",
+    "taxonId": 124394,
+    "obsCount": 127
+  },
+  {
+    "scientificName": "Ptilidium ciliare",
+    "swedishName": "Stor fransmossa",
+    "genusName": "Ptilidium",
+    "familyName": "Ptilidiaceae",
+    "rank": "species",
+    "taxonId": 167557,
+    "obsCount": 124
+  },
+  {
+    "scientificName": "Antitrichia curtipendula",
+    "swedishName": "fällmossa",
+    "genusName": "Antitrichia",
+    "familyName": "Antitrichiaceae",
+    "rank": "species",
+    "taxonId": 126107,
+    "obsCount": 121
+  }
+]

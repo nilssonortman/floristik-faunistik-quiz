@@ -1,0 +1,272 @@
+[
+  {
+    "scientificName": "Evernia prunastri",
+    "swedishName": "Slånlav",
+    "genusName": "Evernia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 123175,
+    "obsCount": 845
+  },
+  {
+    "scientificName": "Xanthoria parietina",
+    "swedishName": "Vägglav",
+    "genusName": "Xanthoria",
+    "familyName": "Teloschistaceae",
+    "rank": "species",
+    "taxonId": 55576,
+    "obsCount": 843
+  },
+  {
+    "scientificName": "Hypogymnia physodes",
+    "swedishName": "Blåslav",
+    "genusName": "Hypogymnia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 117971,
+    "obsCount": 683
+  },
+  {
+    "scientificName": "Parmelia sulcata",
+    "swedishName": "Skrynkellav",
+    "genusName": "Parmelia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 54734,
+    "obsCount": 640
+  },
+  {
+    "scientificName": "Cladonia rangiferina",
+    "swedishName": "Grå renlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 119778,
+    "obsCount": 460
+  },
+  {
+    "scientificName": "Platismatia glauca",
+    "swedishName": "Näverlav",
+    "genusName": "Platismatia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 117874,
+    "obsCount": 386
+  },
+  {
+    "scientificName": "Lobaria pulmonaria",
+    "swedishName": "lunglav",
+    "genusName": "Lobaria",
+    "familyName": "Lobariaceae",
+    "rank": "species",
+    "taxonId": 48711,
+    "obsCount": 380
+  },
+  {
+    "scientificName": "Cetraria islandica",
+    "swedishName": "Islandslav",
+    "genusName": "Cetraria",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 180450,
+    "obsCount": 379
+  },
+  {
+    "scientificName": "Cladonia stellaris",
+    "swedishName": "fönsterlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 125632,
+    "obsCount": 370
+  },
+  {
+    "scientificName": "Phlyctis argena",
+    "swedishName": "blemlav",
+    "genusName": "Phlyctis",
+    "familyName": "Phlyctidaceae",
+    "rank": "species",
+    "taxonId": 182631,
+    "obsCount": 347
+  },
+  {
+    "scientificName": "Lasallia pustulata",
+    "swedishName": "Tuschlav",
+    "genusName": "Lasallia",
+    "familyName": "Umbilicariaceae",
+    "rank": "species",
+    "taxonId": 222671,
+    "obsCount": 332
+  },
+  {
+    "scientificName": "Pseudevernia furfuracea",
+    "swedishName": "Gällav",
+    "genusName": "Pseudevernia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 175355,
+    "obsCount": 315
+  },
+  {
+    "scientificName": "Ramalina farinacea",
+    "swedishName": "mjölig brosklav",
+    "genusName": "Ramalina",
+    "familyName": "Ramalinaceae",
+    "rank": "species",
+    "taxonId": 54758,
+    "obsCount": 252
+  },
+  {
+    "scientificName": "Usnea dasopoga",
+    "swedishName": "Skägglav",
+    "genusName": "Usnea",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 532452,
+    "obsCount": 245
+  },
+  {
+    "scientificName": "Cladonia fimbriata",
+    "swedishName": "naggbägarlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 179037,
+    "obsCount": 233
+  },
+  {
+    "scientificName": "Parmelia saxatilis",
+    "swedishName": "Färglav",
+    "genusName": "Parmelia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 117860,
+    "obsCount": 229
+  },
+  {
+    "scientificName": "Nephroma arcticum",
+    "swedishName": "norrlandslav",
+    "genusName": "Nephroma",
+    "familyName": "Nephromataceae",
+    "rank": "species",
+    "taxonId": 225797,
+    "obsCount": 229
+  },
+  {
+    "scientificName": "Rhizocarpon geographicum",
+    "swedishName": "Kartlav",
+    "genusName": "Rhizocarpon",
+    "familyName": "Rhizocarpaceae",
+    "rank": "species",
+    "taxonId": 119888,
+    "obsCount": 217
+  },
+  {
+    "scientificName": "Lecidella elaeochroma",
+    "swedishName": "Asplav",
+    "genusName": "Lecidella",
+    "familyName": "Lecanoraceae",
+    "rank": "species",
+    "taxonId": 223123,
+    "obsCount": 213
+  },
+  {
+    "scientificName": "Peltigera praetextata",
+    "swedishName": "fjällig filtlav",
+    "genusName": "Peltigera",
+    "familyName": "Peltigeraceae",
+    "rank": "species",
+    "taxonId": 127051,
+    "obsCount": 206
+  },
+  {
+    "scientificName": "Bryoria fuscescens",
+    "swedishName": "manlav",
+    "genusName": "Bryoria",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 117927,
+    "obsCount": 203
+  },
+  {
+    "scientificName": "Cladonia arbuscula",
+    "swedishName": "gulvit renlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 320843,
+    "obsCount": 197
+  },
+  {
+    "scientificName": "Xanthoparmelia conspersa",
+    "swedishName": "Kaklav",
+    "genusName": "Xanthoparmelia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 203800,
+    "obsCount": 192
+  },
+  {
+    "scientificName": "Vulpicida pinastri",
+    "swedishName": "Granlav",
+    "genusName": "Vulpicida",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 182605,
+    "obsCount": 188
+  },
+  {
+    "scientificName": "Lecanora chlarotera",
+    "swedishName": "lövträdskantlav",
+    "genusName": "Lecanora",
+    "familyName": "Lecanoraceae",
+    "rank": "species",
+    "taxonId": 222838,
+    "obsCount": 175
+  },
+  {
+    "scientificName": "Peltigera canina",
+    "swedishName": "Filtlav",
+    "genusName": "Peltigera",
+    "familyName": "Peltigeraceae",
+    "rank": "species",
+    "taxonId": 180500,
+    "obsCount": 170
+  },
+  {
+    "scientificName": "Peltigera aphthosa",
+    "swedishName": "torsklav",
+    "genusName": "Peltigera",
+    "familyName": "Peltigeraceae",
+    "rank": "species",
+    "taxonId": 119675,
+    "obsCount": 160
+  },
+  {
+    "scientificName": "Ramalina fraxinea",
+    "swedishName": "brosklav",
+    "genusName": "Ramalina",
+    "familyName": "Ramalinaceae",
+    "rank": "species",
+    "taxonId": 229765,
+    "obsCount": 153
+  },
+  {
+    "scientificName": "Usnea hirta",
+    "swedishName": "Luddig skägglav",
+    "genusName": "Usnea",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 182679,
+    "obsCount": 152
+  },
+  {
+    "scientificName": "Graphis scripta",
+    "swedishName": "skriftlav",
+    "genusName": "Graphis",
+    "familyName": "Graphidaceae",
+    "rank": "species",
+    "taxonId": 117987,
+    "obsCount": 141
+  }
+]

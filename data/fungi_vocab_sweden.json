@@ -1,0 +1,452 @@
+[
+  {
+    "scientificName": "Fomitopsis pinicola",
+    "swedishName": "Klibbticka",
+    "genusName": "Fomitopsis",
+    "familyName": "Fomitopsidaceae",
+    "rank": "species",
+    "taxonId": 1098280,
+    "obsCount": 1516
+  },
+  {
+    "scientificName": "Amanita muscaria",
+    "swedishName": "Röd flugsvamp",
+    "genusName": "Amanita",
+    "familyName": "Amanitaceae",
+    "rank": "species",
+    "taxonId": 48715,
+    "obsCount": 1442
+  },
+  {
+    "scientificName": "Fomes fomentarius",
+    "swedishName": "Fnöskticka",
+    "genusName": "Fomes",
+    "familyName": "Polyporaceae",
+    "rank": "species",
+    "taxonId": 127510,
+    "obsCount": 938
+  },
+  {
+    "scientificName": "Evernia prunastri",
+    "swedishName": "Slånlav",
+    "genusName": "Evernia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 123175,
+    "obsCount": 845
+  },
+  {
+    "scientificName": "Xanthoria parietina",
+    "swedishName": "Vägglav",
+    "genusName": "Xanthoria",
+    "familyName": "Teloschistaceae",
+    "rank": "species",
+    "taxonId": 55576,
+    "obsCount": 843
+  },
+  {
+    "scientificName": "Cantharellus cibarius",
+    "swedishName": "Kantarell",
+    "genusName": "Cantharellus",
+    "familyName": "Hydnaceae",
+    "rank": "species",
+    "taxonId": 47347,
+    "obsCount": 754
+  },
+  {
+    "scientificName": "Hypogymnia physodes",
+    "swedishName": "Blåslav",
+    "genusName": "Hypogymnia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 117971,
+    "obsCount": 683
+  },
+  {
+    "scientificName": "Parmelia sulcata",
+    "swedishName": "Skrynkellav",
+    "genusName": "Parmelia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 54734,
+    "obsCount": 640
+  },
+  {
+    "scientificName": "Fomitopsis betulina",
+    "swedishName": "Björkticka",
+    "genusName": "Fomitopsis",
+    "familyName": "Fomitopsidaceae",
+    "rank": "species",
+    "taxonId": 775410,
+    "obsCount": 639
+  },
+  {
+    "scientificName": "Boletus edulis",
+    "swedishName": "Karljohansvamp",
+    "genusName": "Boletus",
+    "familyName": "Boletaceae",
+    "rank": "species",
+    "taxonId": 48701,
+    "obsCount": 622
+  },
+  {
+    "scientificName": "Amanita rubescens",
+    "swedishName": "rodnande flugsvamp",
+    "genusName": "Amanita",
+    "familyName": "Amanitaceae",
+    "rank": "species",
+    "taxonId": 67661,
+    "obsCount": 549
+  },
+  {
+    "scientificName": "Leccinum scabrum",
+    "swedishName": "björksopp",
+    "genusName": "Leccinum",
+    "familyName": "Boletaceae",
+    "rank": "species",
+    "taxonId": 63232,
+    "obsCount": 541
+  },
+  {
+    "scientificName": "Coprinus comatus",
+    "swedishName": "fjällig bläcksvamp",
+    "genusName": "Coprinus",
+    "familyName": "Coprinaceae",
+    "rank": "species",
+    "taxonId": 47392,
+    "obsCount": 531
+  },
+  {
+    "scientificName": "Calocera viscosa",
+    "swedishName": "gullhorn",
+    "genusName": "Calocera",
+    "familyName": "Dacrymycetaceae",
+    "rank": "species",
+    "taxonId": 63405,
+    "obsCount": 522
+  },
+  {
+    "scientificName": "Cladonia rangiferina",
+    "swedishName": "Grå renlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 119778,
+    "obsCount": 460
+  },
+  {
+    "scientificName": "Lycoperdon perlatum",
+    "swedishName": "Vårtig röksvamp",
+    "genusName": "Lycoperdon",
+    "familyName": "Lycoperdaceae",
+    "rank": "species",
+    "taxonId": 48443,
+    "obsCount": 454
+  },
+  {
+    "scientificName": "Craterellus tubaeformis",
+    "swedishName": "trattkantarell",
+    "genusName": "Craterellus",
+    "familyName": "Hydnaceae",
+    "rank": "species",
+    "taxonId": 350511,
+    "obsCount": 428
+  },
+  {
+    "scientificName": "Laetiporus sulphureus",
+    "swedishName": "Svavelticka",
+    "genusName": "Laetiporus",
+    "familyName": "Laetiporaceae",
+    "rank": "species",
+    "taxonId": 53713,
+    "obsCount": 418
+  },
+  {
+    "scientificName": "Platismatia glauca",
+    "swedishName": "Näverlav",
+    "genusName": "Platismatia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 117874,
+    "obsCount": 386
+  },
+  {
+    "scientificName": "Lobaria pulmonaria",
+    "swedishName": "lunglav",
+    "genusName": "Lobaria",
+    "familyName": "Lobariaceae",
+    "rank": "species",
+    "taxonId": 48711,
+    "obsCount": 380
+  },
+  {
+    "scientificName": "Cetraria islandica",
+    "swedishName": "Islandslav",
+    "genusName": "Cetraria",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 180450,
+    "obsCount": 379
+  },
+  {
+    "scientificName": "Cladonia stellaris",
+    "swedishName": "fönsterlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 125632,
+    "obsCount": 370
+  },
+  {
+    "scientificName": "Tremella mesenterica",
+    "swedishName": "Gullkrös",
+    "genusName": "Tremella",
+    "familyName": "Tremellaceae",
+    "rank": "species",
+    "taxonId": 48529,
+    "obsCount": 356
+  },
+  {
+    "scientificName": "Hygrophoropsis aurantiaca",
+    "swedishName": "Narrkantarell",
+    "genusName": "Hygrophoropsis",
+    "familyName": "Hygrophoropsidaceae",
+    "rank": "species",
+    "taxonId": 63538,
+    "obsCount": 356
+  },
+  {
+    "scientificName": "Xylaria hypoxylon",
+    "swedishName": "stubbhorn",
+    "genusName": "Xylaria",
+    "familyName": "Xylariaceae",
+    "rank": "species",
+    "taxonId": 55267,
+    "obsCount": 355
+  },
+  {
+    "scientificName": "Phlyctis argena",
+    "swedishName": "blemlav",
+    "genusName": "Phlyctis",
+    "familyName": "Phlyctidaceae",
+    "rank": "species",
+    "taxonId": 182631,
+    "obsCount": 347
+  },
+  {
+    "scientificName": "Amanita fulva",
+    "swedishName": "brun kamskivling",
+    "genusName": "Amanita",
+    "familyName": "Amanitaceae",
+    "rank": "species",
+    "taxonId": 63027,
+    "obsCount": 337
+  },
+  {
+    "scientificName": "Hypholoma fasciculare",
+    "swedishName": "svavelgul slöjskivling",
+    "genusName": "Hypholoma",
+    "familyName": "Strophariaceae",
+    "rank": "species",
+    "taxonId": 48767,
+    "obsCount": 333
+  },
+  {
+    "scientificName": "Lasallia pustulata",
+    "swedishName": "Tuschlav",
+    "genusName": "Lasallia",
+    "familyName": "Umbilicariaceae",
+    "rank": "species",
+    "taxonId": 222671,
+    "obsCount": 332
+  },
+  {
+    "scientificName": "Porodaedalea pini",
+    "swedishName": "Tallticka",
+    "genusName": "Porodaedalea",
+    "familyName": "Hymenochaetaceae",
+    "rank": "species",
+    "taxonId": 118081,
+    "obsCount": 323
+  },
+  {
+    "scientificName": "Leccinum versipelle",
+    "swedishName": "tegelsopp",
+    "genusName": "Leccinum",
+    "familyName": "Boletaceae",
+    "rank": "species",
+    "taxonId": 343661,
+    "obsCount": 323
+  },
+  {
+    "scientificName": "Laccaria amethystina",
+    "swedishName": "ametistskivling",
+    "genusName": "Laccaria",
+    "familyName": "Hydnangiaceae",
+    "rank": "species",
+    "taxonId": 55899,
+    "obsCount": 316
+  },
+  {
+    "scientificName": "Pseudevernia furfuracea",
+    "swedishName": "Gällav",
+    "genusName": "Pseudevernia",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 175355,
+    "obsCount": 315
+  },
+  {
+    "scientificName": "Paxillus involutus",
+    "swedishName": "pluggskivling",
+    "genusName": "Paxillus",
+    "familyName": "Paxillaceae",
+    "rank": "species",
+    "taxonId": 55941,
+    "obsCount": 301
+  },
+  {
+    "scientificName": "Amanita citrina",
+    "swedishName": "vitgul flugsvamp",
+    "genusName": "Amanita",
+    "familyName": "Amanitaceae",
+    "rank": "species",
+    "taxonId": 63271,
+    "obsCount": 301
+  },
+  {
+    "scientificName": "Gomphidius glutinosus",
+    "swedishName": "Citronslemskivling",
+    "genusName": "Gomphidius",
+    "familyName": "Gomphidiaceae",
+    "rank": "species",
+    "taxonId": 48424,
+    "obsCount": 297
+  },
+  {
+    "scientificName": "Marasmius oreades",
+    "swedishName": "nejlikbrosking",
+    "genusName": "Marasmius",
+    "familyName": "Marasmiaceae",
+    "rank": "species",
+    "taxonId": 118240,
+    "obsCount": 297
+  },
+  {
+    "scientificName": "Stereum hirsutum",
+    "swedishName": "Raggskinn",
+    "genusName": "Stereum",
+    "familyName": "Stereaceae",
+    "rank": "species",
+    "taxonId": 55501,
+    "obsCount": 278
+  },
+  {
+    "scientificName": "Macrolepiota procera",
+    "swedishName": "stolt fjällskivling",
+    "genusName": "Macrolepiota",
+    "familyName": "Agaricaceae",
+    "rank": "species",
+    "taxonId": 63401,
+    "obsCount": 278
+  },
+  {
+    "scientificName": "Coprinellus micaceus",
+    "swedishName": "glitterbläcksvamp",
+    "genusName": "Coprinellus",
+    "familyName": "Psathyrellaceae",
+    "rank": "species",
+    "taxonId": 56318,
+    "obsCount": 276
+  },
+  {
+    "scientificName": "Pholiota squarrosa",
+    "swedishName": "fjällig tofsskivling",
+    "genusName": "Pholiota",
+    "familyName": "Strophariaceae",
+    "rank": "species",
+    "taxonId": 153445,
+    "obsCount": 276
+  },
+  {
+    "scientificName": "Sparassis crispa",
+    "swedishName": "blomkålssvamp",
+    "genusName": "Sparassis",
+    "familyName": "Sparassidaceae",
+    "rank": "species",
+    "taxonId": 63014,
+    "obsCount": 259
+  },
+  {
+    "scientificName": "Cerioporus squamosus",
+    "swedishName": "fjällticka",
+    "genusName": "Cerioporus",
+    "familyName": "Polyporaceae",
+    "rank": "species",
+    "taxonId": 940028,
+    "obsCount": 258
+  },
+  {
+    "scientificName": "Kuehneromyces mutabilis",
+    "swedishName": "föränderlig tofsskivling",
+    "genusName": "Kuehneromyces",
+    "familyName": "Hymenogastraceae",
+    "rank": "species",
+    "taxonId": 153033,
+    "obsCount": 253
+  },
+  {
+    "scientificName": "Ganoderma applanatum",
+    "swedishName": "platticka",
+    "genusName": "Ganoderma",
+    "familyName": "Polyporaceae",
+    "rank": "species",
+    "taxonId": 48473,
+    "obsCount": 252
+  },
+  {
+    "scientificName": "Ramalina farinacea",
+    "swedishName": "mjölig brosklav",
+    "genusName": "Ramalina",
+    "familyName": "Ramalinaceae",
+    "rank": "species",
+    "taxonId": 54758,
+    "obsCount": 252
+  },
+  {
+    "scientificName": "Usnea dasopoga",
+    "swedishName": "Skägglav",
+    "genusName": "Usnea",
+    "familyName": "Parmeliaceae",
+    "rank": "species",
+    "taxonId": 532452,
+    "obsCount": 245
+  },
+  {
+    "scientificName": "Lactarius rufus",
+    "swedishName": "pepparriska",
+    "genusName": "Lactarius",
+    "familyName": "Russulaceae",
+    "rank": "species",
+    "taxonId": 118223,
+    "obsCount": 244
+  },
+  {
+    "scientificName": "Imleria badia",
+    "swedishName": "Brunsopp",
+    "genusName": "Imleria",
+    "familyName": "Boletaceae",
+    "rank": "species",
+    "taxonId": 510854,
+    "obsCount": 242
+  },
+  {
+    "scientificName": "Cladonia fimbriata",
+    "swedishName": "naggbägarlav",
+    "genusName": "Cladonia",
+    "familyName": "Cladoniaceae",
+    "rank": "species",
+    "taxonId": 179037,
+    "obsCount": 233
+  }
+]
