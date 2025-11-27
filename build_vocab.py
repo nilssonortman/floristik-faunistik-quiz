@@ -14,7 +14,9 @@ For each configured group (insects, plants, mosses, etc.), this script:
          "scientificName": "Bombus terrestris",
          "swedishName": "Mörk jordhumla",
          "genusName": "Bombus",
-         "familyName": "Apidae",
+         "familyName": "Apidae",              # Latin family name (backwards-compatible)
+         "familyScientificName": "Apidae",    # same as above
+         "familySwedishName": "bin",          # Swedish family name if available
          "rank": "species",
          "taxonId": 52856,
          "obsCount": 1234,
@@ -239,7 +241,11 @@ def fetch_taxon_details(taxon_ids: List[int]) -> Dict[int, Dict[str, Any]]:
     for i in range(0, len(taxon_ids), chunk_size):
         chunk = taxon_ids[i:i + chunk_size]
         url = f"{INAT_BASE}/taxa/{','.join(str(t) for t in chunk)}"
-        params = {"locale": "en"}  # English locale for complete ancestor info
+        # Swedish locale + preferred_place_id to get Swedish common names where available
+        params = {
+            "locale": "sv",
+            "preferred_place_id": SWEDEN_PLACE_ID,
+        }
 
         print(f"  Enriching taxonomy for taxon_ids {chunk[0]}..{chunk[-1]}")
 
@@ -347,7 +353,9 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
         scientificName (species),
         swedishName,
         genusName,
-        familyName,
+        familyName (Latin),
+        familyScientificName (Latin),
+        familySwedishName (if available),
         rank,
         taxonId,
         obsCount,
@@ -414,10 +422,13 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
         enriched = tax_details.get(tid, taxon)
         ancestors = enriched.get("ancestors") or []
 
-        family_name = None
+        family_scientific_name: Optional[str] = None
+        family_swedish_name: Optional[str] = None
+
         for anc in ancestors:
             if anc.get("rank") == "family":
-                family_name = anc.get("name")
+                family_scientific_name = anc.get("name")
+                family_swedish_name = anc.get("preferred_common_name")
                 break
 
         print(f"  Fetching example observation for {sci} (taxon_id={tid})...")
@@ -432,7 +443,11 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
                 "scientificName": sci,
                 "swedishName": sw,
                 "genusName": genus_name,
-                "familyName": family_name,
+                # Backwards-compatible field for existing app.js (Latin family name):
+                "familyName": family_scientific_name,
+                # New explicit family fields:
+                "familyScientificName": family_scientific_name,
+                "familySwedishName": family_swedish_name,
                 "rank": enriched.get("rank"),
                 "taxonId": tid,
                 "obsCount": entry["count"],

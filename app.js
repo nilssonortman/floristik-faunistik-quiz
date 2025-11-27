@@ -1,7 +1,8 @@
 // =====================================================================
 // Faunistics quiz: vocab-only
-// - Species-level quiz (working base)
-// - Genus-level quiz built from the same vocab
+// - Species-level quiz
+// - Genus-level quiz
+// - Family-level quiz
 // Images & attribution are pre-baked in the vocab JSON (exampleObservation).
 // =====================================================================
 
@@ -24,13 +25,14 @@ const CONFIG = {
 };
 
 // ---------------- STATE -----------------------------------------------
-let vocabByGroup = {};       // { groupKey: [speciesEntry, ...] }
+let vocabByGroup = {};        // { groupKey: [speciesEntry, ...] }
 let genusVocabByGroup = {};  // { groupKey: [ { genusName, swedishName, representative }, ... ] }
+let familyVocabByGroup = {}; // { groupKey: [ { familyName, swedishName, representative }, ... ] }
 
 let quizQuestions = [];      // [{ correct, options }]
 let currentIndex = 0;
 let score = 0;
-let currentLevel = "species"; // "species" | "genus" (family later)
+let currentLevel = "species"; // "species" | "genus" | "family"
 
 // ---------------- DOM ELEMENTS ----------------------------------------
 const statusEl = document.getElementById("status");
@@ -61,7 +63,7 @@ function pickRandomSubset(array, n) {
   return shuffleArray(array).slice(0, n);
 }
 
-// generic label helper (works for species & genus)
+// generic label helper (works for species/genus/family)
 function formatLabel(scientificName, swedishName) {
   return swedishName ? `${scientificName} (${swedishName})` : scientificName;
 }
@@ -133,6 +135,38 @@ function buildGenusVocabFromSpecies() {
 
   genusVocabByGroup = result;
 }
+function buildFamilyVocabFromSpecies() {
+  const result = {};
+
+  for (const [groupKey, speciesList] of Object.entries(vocabByGroup)) {
+    const familyMap = new Map(); // familyName -> { familyName, swedishName, representative }
+
+    for (const sp of speciesList) {
+      const fam = sp.familyName;
+      if (!fam) continue; // skip species without family info
+
+      // Prefer Swedish family name from vocab (familySwedishName),
+      // otherwise fall back to the species Swedish name as a hint.
+      const familySwe =
+        sp.familySwedishName || sp.swedishName || null;
+
+      if (!familyMap.has(fam)) {
+        familyMap.set(fam, {
+          familyName: fam,          // Latin family name (e.g. Geotrupidae)
+          swedishName: familySwe,   // Swedish family name (e.g. tordyvlar)
+          representative: sp,       // species entry for photos
+        });
+      }
+    }
+
+    const families = Array.from(familyMap.values());
+    result[groupKey] = families;
+    console.log(`Built ${families.length} families for group "${groupKey}"`);
+  }
+
+  familyVocabByGroup = result;
+}
+
 
 // ---------------- BUILD QUIZ: SPECIES LEVEL ---------------------------
 
@@ -140,7 +174,6 @@ async function buildSpeciesQuizQuestionsFromVocab() {
   const neededDistractors = CONFIG.OPTIONS_PER_QUESTION - 1;
   const questions = [];
 
-  // Groups that have enough species (with exampleObservation) to build questions
   const availableGroups = Object.entries(vocabByGroup).filter(
     ([, list]) => list && list.length > neededDistractors
   );
@@ -168,7 +201,6 @@ async function buildSpeciesQuizQuestionsFromVocab() {
       availableGroups[Math.floor(Math.random() * availableGroups.length)];
     if (!list || list.length <= neededDistractors) continue;
 
-    // Pick a correct species from that group
     const correctEntry = list[Math.floor(Math.random() * list.length)];
     const ex = correctEntry.exampleObservation;
     if (!ex || !ex.photoUrl) {
@@ -180,7 +212,6 @@ async function buildSpeciesQuizQuestionsFromVocab() {
       continue;
     }
 
-    // Build distractors: other species from the same group
     const pool = list.filter((s) => s.taxonId !== correctEntry.taxonId);
     if (pool.length < neededDistractors) continue;
 
@@ -201,12 +232,10 @@ async function buildSpeciesQuizQuestionsFromVocab() {
 
     questions.push({
       correct: {
-        // For answer checking:
         answerKey: String(correctEntry.taxonId),
         labelSci: correctEntry.scientificName,
         labelSwe: correctEntry.swedishName,
 
-        // For image & attribution:
         obsId: ex.obsId,
         photoUrl: ex.photoUrl,
         observer: ex.observer || "okänd",
@@ -257,8 +286,8 @@ async function buildGenusQuizQuestionsFromVocab() {
       availableGroups[Math.floor(Math.random() * availableGroups.length)];
     if (!genusList || genusList.length <= neededDistractors) continue;
 
-    // 1) Pick a genus
-    const correctGenus = genusList[Math.floor(Math.random() * genusList.length)];
+    const correctGenus =
+      genusList[Math.floor(Math.random() * genusList.length)];
     const repSpecies = correctGenus.representative;
     const ex = repSpecies.exampleObservation;
     if (!ex || !ex.photoUrl) {
@@ -270,7 +299,6 @@ async function buildGenusQuizQuestionsFromVocab() {
       continue;
     }
 
-    // 2) Build distractor genera from same group
     const pool = genusList.filter(
       (g) => g.genusName !== correctGenus.genusName
     );
@@ -314,6 +342,97 @@ async function buildGenusQuizQuestionsFromVocab() {
   return questions;
 }
 
+// ---------------- BUILD QUIZ: FAMILY LEVEL ----------------------------
+
+async function buildFamilyQuizQuestionsFromVocab() {
+  const neededDistractors = CONFIG.OPTIONS_PER_QUESTION - 1;
+  const questions = [];
+
+  const availableGroups = Object.entries(familyVocabByGroup).filter(
+    ([, list]) => list && list.length > neededDistractors
+  );
+
+  console.log(
+    "Available groups for family quiz:",
+    availableGroups.map(([k, list]) => [k, list.length])
+  );
+
+  if (!availableGroups.length) {
+    console.warn(
+      "No groups with enough families to build family-level questions."
+    );
+    return [];
+  }
+
+  let attempts = 0;
+  const MAX_ATTEMPTS = 200;
+
+  while (
+    questions.length < CONFIG.QUESTIONS_COUNT &&
+    attempts < MAX_ATTEMPTS
+  ) {
+    attempts++;
+
+    const [groupKey, familyList] =
+      availableGroups[Math.floor(Math.random() * availableGroups.length)];
+    if (!familyList || familyList.length <= neededDistractors) continue;
+
+    const correctFamily =
+      familyList[Math.floor(Math.random() * familyList.length)];
+    const repSpecies = correctFamily.representative;
+    const ex = repSpecies.exampleObservation;
+    if (!ex || !ex.photoUrl) {
+      console.warn(
+        "No exampleObservation for representative of family",
+        correctFamily.familyName,
+        "– skipping."
+      );
+      continue;
+    }
+
+    const pool = familyList.filter(
+      (f) => f.familyName !== correctFamily.familyName
+    );
+    if (pool.length < neededDistractors) continue;
+
+    const distractorFamilies = pickRandomSubset(pool, neededDistractors);
+
+    const options = [
+      {
+        key: correctFamily.familyName, // family: key = familyName
+        labelSci: correctFamily.familyName,
+        labelSwe: correctFamily.swedishName,
+      },
+      ...distractorFamilies.map((f) => ({
+        key: f.familyName,
+        labelSci: f.familyName,
+        labelSwe: f.swedishName,
+      })),
+    ];
+
+    questions.push({
+      correct: {
+        answerKey: correctFamily.familyName,
+        labelSci: correctFamily.familyName,
+        labelSwe: correctFamily.swedishName,
+
+        obsId: ex.obsId,
+        photoUrl: ex.photoUrl,
+        observer: ex.observer || "okänd",
+        licenseCode: ex.licenseCode || null,
+        obsUrl: ex.obsUrl || "#",
+        groupKey,
+      },
+      options: shuffleArray(options),
+    });
+  }
+
+  console.log(
+    `Family quiz: built ${questions.length} questions after ${attempts} attempts`
+  );
+  return questions;
+}
+
 // ---------------- REBUILD QUIZ FOR CURRENT LEVEL ----------------------
 
 async function rebuildQuizForCurrentLevel() {
@@ -324,6 +443,8 @@ async function rebuildQuizForCurrentLevel() {
     quizQuestions = await buildSpeciesQuizQuestionsFromVocab();
   } else if (currentLevel === "genus") {
     quizQuestions = await buildGenusQuizQuestionsFromVocab();
+  } else if (currentLevel === "family") {
+    quizQuestions = await buildFamilyQuizQuestionsFromVocab();
   }
 
   currentIndex = 0;
@@ -424,7 +545,11 @@ function handleAnswerClick(clickedBtn, correct) {
   }
 
   const label = formatLabel(correct.labelSci, correct.labelSwe);
-  const levelWord = currentLevel === "genus" ? "släkte" : "art";
+
+  let levelWord = "art";
+  if (currentLevel === "genus") levelWord = "släkte";
+  else if (currentLevel === "family") levelWord = "familj";
+
   statusEl.textContent = `Korrekt ${levelWord}: ${label}`;
 
   nextBtn.classList.remove("hidden");
@@ -450,6 +575,7 @@ async function initQuiz() {
   try {
     await loadVocab();
     buildGenusVocabFromSpecies();
+    buildFamilyVocabFromSpecies();
 
     if (levelSelectEl) {
       levelSelectEl.value = currentLevel;
