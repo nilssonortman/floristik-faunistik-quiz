@@ -65,7 +65,13 @@ function pickRandomSubset(array, n) {
 
 // generic label helper (works for species/genus/family)
 function formatLabel(scientificName, swedishName) {
-  return swedishName ? `${scientificName} (${swedishName})` : scientificName;
+  const sci = `<i>${scientificName}</i>`;
+  return swedishName ? `${sci} (${swedishName})` : sci;
+}
+
+function italicizeSci(name) {
+  if (!name) return "";
+  return `<i>${name}</i>`;
 }
 
 // ---------------- LOAD VOCAB ------------------------------------------
@@ -312,12 +318,12 @@ async function buildGenusQuizQuestionsFromVocab() {
       {
         key: correctGenus.genusName, // genus: key = genusName
         labelSci: correctGenus.genusName,
-        labelSwe: correctGenus.swedishName,
+        labelSwe: null,
       },
       ...distractorGenera.map((g) => ({
         key: g.genusName,
         labelSci: g.genusName,
-        labelSwe: g.swedishName,
+        labelSwe: null,
       })),
     ];
 
@@ -520,19 +526,21 @@ function renderQuestion() {
     ${licenseText}
   `;
 
-  // Answers
-  answersEl.innerHTML = "";
-  options.forEach((opt) => {
-    const btn = document.createElement("button");
-    btn.className = "answer-btn";
-    btn.textContent = formatLabel(opt.labelSci, opt.labelSwe);
-    btn.dataset.key = opt.key;
-    btn.addEventListener("click", () => handleAnswerClick(btn, correct));
-    answersEl.appendChild(btn);
-  });
 
-  nextBtn.classList.add("hidden");
-  questionContainerEl.classList.remove("hidden");
+// Answers
+answersEl.innerHTML = "";
+options.forEach((opt) => {
+  const btn = document.createElement("button");
+  btn.className = "answer-btn";
+  // Allow HTML so we can italicize scientific names
+  btn.innerHTML = formatLabel(opt.labelSci, opt.labelSwe);
+  btn.dataset.key = opt.key;
+  btn.addEventListener("click", () => handleAnswerClick(btn, correct));
+  answersEl.appendChild(btn);
+});
+
+nextBtn.classList.add("hidden");
+questionContainerEl.classList.remove("hidden");
 }
 
 function handleAnswerClick(clickedBtn, correct) {
@@ -564,7 +572,7 @@ function handleAnswerClick(clickedBtn, correct) {
   if (currentLevel === "genus") levelWord = "släkte";
   else if (currentLevel === "family") levelWord = "familj";
 
-  statusEl.textContent = `Korrekt ${levelWord}: ${label}`;
+  statusEl.innerHTML = `Korrekt ${levelWord}: ${label}`;
 
   nextBtn.classList.remove("hidden");
   scoreEl.textContent = `Poäng: ${score} / ${quizQuestions.length}`;
