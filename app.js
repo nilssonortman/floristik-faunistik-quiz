@@ -33,6 +33,11 @@ let quizQuestions = [];      // [{ correct, options }]
 let currentIndex = 0;
 let score = 0;
 let currentLevel = "species"; // "species" | "genus" | "family"
+let distractorScope = "group"; // "group" | "order" | "family"
+
+const distractorScopeSelectEl = document.getElementById(
+  "distractor-scope-select"
+);
 
 // ---------------- DOM ELEMENTS ----------------------------------------
 const statusEl = document.getElementById("status");
@@ -72,6 +77,116 @@ function formatLabel(scientificName, swedishName) {
 function italicizeSci(name) {
   if (!name) return "";
   return `<i>${name}</i>`;
+}
+
+function getSpeciesDistractorPool(list, correctEntry, needed, scope) {
+  // Start with all other species in the same broad group
+  let basePool = list.filter((s) => s.taxonId !== correctEntry.taxonId);
+
+  if (scope === "family") {
+    const fam =
+      correctEntry.familyName || correctEntry.familyScientificName || null;
+    if (fam) {
+      const famPool = basePool.filter(
+        (s) =>
+          (s.familyName || s.familyScientificName || null) === fam
+      );
+      if (famPool.length >= needed) {
+        return famPool;
+      }
+      // not enough → downgrade to order
+      scope = "order";
+    } else {
+      scope = "order";
+    }
+  }
+
+  if (scope === "order") {
+    const ord = correctEntry.orderScientificName || null;
+    if (ord) {
+      const ordPool = basePool.filter(
+        (s) => s.orderScientificName === ord
+      );
+      if (ordPool.length >= needed) {
+        return ordPool;
+      }
+    }
+    // not enough or no order → fallback to broad group
+  }
+
+  // broad group fallback
+  return basePool;
+}
+
+function getGenusDistractorPool(genusList, correctGenus, needed, scope) {
+  let basePool = genusList.filter(
+    (g) => g.genusName !== correctGenus.genusName
+  );
+
+  const rep = correctGenus.representative;
+  if (!rep) return basePool;
+
+  if (scope === "family") {
+    const fam = rep.familyName || rep.familyScientificName || null;
+    if (fam) {
+      const famPool = basePool.filter((g) => {
+        const r = g.representative;
+        if (!r) return false;
+        return (r.familyName || r.familyScientificName || null) === fam;
+      });
+      if (famPool.length >= needed) {
+        return famPool;
+      }
+      scope = "order";
+    } else {
+      scope = "order";
+    }
+  }
+
+  if (scope === "order") {
+    const ord = rep.orderScientificName || null;
+    if (ord) {
+      const ordPool = basePool.filter((g) => {
+        const r = g.representative;
+        return r && r.orderScientificName === ord;
+      });
+      if (ordPool.length >= needed) {
+        return ordPool;
+      }
+    }
+  }
+
+  return basePool;
+}
+
+function getFamilyDistractorPool(familyList, correctFamily, needed, scope) {
+  let basePool = familyList.filter(
+    (f) => f.familyName !== correctFamily.familyName
+  );
+
+  const rep = correctFamily.representative;
+  if (!rep) return basePool;
+
+  // "family" doesn't make sense here, treat it as "order"
+  if (scope === "family") {
+    scope = "order";
+  }
+
+  if (scope === "order") {
+    const ord = rep.orderScientificName || null;
+    if (ord) {
+      const ordPool = basePool.filter((f) => {
+        const r = f.representative;
+        return r && r.orderScientificName === ord;
+      });
+      if (ordPool.length >= needed) {
+        return ordPool;
+      }
+    }
+    // Not enough or no order → broad group fallback
+  }
+
+  return basePool;
 }
 
 // ---------------- LOAD VOCAB ------------------------------------------
@@ -220,7 +335,12 @@ async function buildSpeciesQuizQuestionsFromVocab() {
       continue;
     }
 
-    const pool = list.filter((s) => s.taxonId !== correctEntry.taxonId);
+    let pool = getSpeciesDistractorPool(
+        list,
+        correctEntry,
+        neededDistractors,
+        distractorScope
+        );
     if (pool.length < neededDistractors) continue;
 
     const distractorEntries = pickRandomSubset(pool, neededDistractors);
@@ -307,12 +427,16 @@ async function buildGenusQuizQuestionsFromVocab() {
       continue;
     }
 
-    const pool = genusList.filter(
-      (g) => g.genusName !== correctGenus.genusName
+    let pool = getGenusDistractorPool(
+        genusList,
+        correctGenus,
+        neededDistractors,
+        distractorScope
     );
     if (pool.length < neededDistractors) continue;
 
     const distractorGenera = pickRandomSubset(pool, neededDistractors);
+
 
     const options = [
       {
@@ -398,12 +522,16 @@ async function buildFamilyQuizQuestionsFromVocab() {
       continue;
     }
 
-    const pool = familyList.filter(
-      (f) => f.familyName !== correctFamily.familyName
+    let pool = getFamilyDistractorPool(
+        familyList,
+        correctFamily,
+        neededDistractors,
+        distractorScope
     );
     if (pool.length < neededDistractors) continue;
 
     const distractorFamilies = pickRandomSubset(pool, neededDistractors);
+
     
 const sweName = correctFamily.swedishName;
 const formattedSwe =
@@ -601,6 +729,16 @@ async function initQuiz() {
 
     if (levelSelectEl) {
       levelSelectEl.value = currentLevel;
+    }
+
+    if (distractorScopeSelectEl) {
+      distractorScopeSelectEl.value = distractorScope;
+    }
+    if (distractorScopeSelectEl) {
+      distractorScopeSelectEl.addEventListener("change", async () => {
+      distractorScope = distractorScopeSelectEl.value || "group";
+      await rebuildQuizForCurrentLevel();
+    });
     }
 
     await rebuildQuizForCurrentLevel();
