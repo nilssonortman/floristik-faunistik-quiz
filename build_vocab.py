@@ -75,7 +75,7 @@ TAXA_CONFIG = [
     {
         "label": "insects",
         "taxon_ids": [47158],  # Insecta
-        "top_n": 100,
+        "top_n": 100,   #basic: 100, extended: 400
     },
     # -------------------------
     # PLANTS (broad)
@@ -83,7 +83,7 @@ TAXA_CONFIG = [
     {
         "label": "plants",
         "taxon_ids": [211194],  # Trachaeophyta
-        "top_n": 100,
+        "top_n": 100,   #basic: 100, extended: 400
     },
     # -------------------------
     # MOSSES = Bryophyta + Marchantiophyta
@@ -91,7 +91,7 @@ TAXA_CONFIG = [
     {
         "label": "mosses",
         "taxon_ids": [311249, 64615],  # Marchantiophyta (liverworts)+ Bryophyta (mosses)
-        "top_n": 35,
+        "top_n": 40,    #basic: 35, extended: 100
     },
     # -------------------------
     # LICHENS (Lecanoromycetes + Eurotiomycetes = main lichen groups)
@@ -99,16 +99,15 @@ TAXA_CONFIG = [
     {
         "label": "lichens",
         "taxon_ids": [54743, 117868, 121092],   # combined into ONE list
-        "top_n": 30,
+        "top_n": 40,    #basic: 30, extended: 100
     },
-
    # -------------------------
     # MAMMALS
     # -------------------------
     {
         "label": "mammals",
         "taxon_ids": [40151],
-        "top_n": 20,
+        "top_n": 25,    #basic: 25, extended: 500
     },
     # -------------------------
     # BIRDS
@@ -116,7 +115,15 @@ TAXA_CONFIG = [
     {
         "label": "birds",
         "taxon_ids": [3],
-        "top_n": 50,
+        "top_n": 50,    #basic: 50, extended: 500
+    },
+    # -------------------------
+    # REPTILES AND AMPHIBIANS
+    # -------------------------
+    {
+        "label": "herptiles",
+        "taxon_ids": [26036, 20978],   #reptilia + amphibia
+        "top_n": 19,    #basic: 19, extended: 19
     },
     # -------------------------
     # FUNGI + LICHENS
@@ -124,7 +131,7 @@ TAXA_CONFIG = [
     {
         "label": "fungi",
         "taxon_ids": [47170],  # Fungi kingdom
-        "top_n": 50,
+        "top_n": 50,    #basic: 50, extended: 500
     },
     # -------------------------
     # SPIDERS
@@ -132,7 +139,7 @@ TAXA_CONFIG = [
     {
         "label": "spiders",
         "taxon_ids": [47118],  # Araneae
-        "top_n": 35,
+        "top_n": 35,    #basic: 35, extended: 500
     },
 ]
 
