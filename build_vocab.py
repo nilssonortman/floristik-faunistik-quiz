@@ -5,7 +5,7 @@ Build species-level vocabularies for faunistics quiz from iNaturalist.
 For each configured group (insects, plants, mosses, etc.), this script:
   1) Calls /observations/species_counts to get the most observed species in Sweden
   2) Deduplicates species across multiple higher taxa if needed
-  3) Fetches full taxon info (to get family, etc.) via /v1/taxa
+  3) Fetches full taxon info (to get class, order, family, etc.) via /v1/taxa
   4) Fetches ONE example observation with a usable photo per species
   5) Writes a JSON file with:
 
@@ -15,8 +15,12 @@ For each configured group (insects, plants, mosses, etc.), this script:
          "swedishName": "Mörk jordhumla",
          "genusName": "Bombus",
          "familyName": "Apidae",              # Latin family name (backwards-compatible)
-         "familyScientificName": "Apidae",    # same as above
-         "familySwedishName": "bin",          # Swedish family name if available
+         "familyScientificName": "Apidae",
+         "familySwedishName": "bin",
+         "orderScientificName": "Hymenoptera",
+         "orderSwedishName": null,
+         "classScientificName": "Insecta",
+         "classSwedishName": null,
          "rank": "species",
          "taxonId": 52856,
          "obsCount": 1234,
@@ -71,14 +75,14 @@ TAXA_CONFIG = [
     {
         "label": "insects",
         "taxon_ids": [47158],  # Insecta
-        "top_n": 70,
+        "top_n": 100,
     },
     # -------------------------
     # PLANTS (broad)
     # -------------------------
     {
         "label": "plants",
-        "taxon_ids": [47126],  # Plantae
+        "taxon_ids": [211194],  # Trachaeophyta
         "top_n": 100,
     },
     # -------------------------
@@ -86,21 +90,19 @@ TAXA_CONFIG = [
     # -------------------------
     {
         "label": "mosses",
-        "taxon_ids": [
-            311249,  # Bryophyta (mosses)
-            64615,   # Marchantiophyta (liverworts)
-        ],
+        "taxon_ids": [311249, 64615],  # Marchantiophyta (liverworts)+ Bryophyta (mosses)
         "top_n": 35,
     },
     # -------------------------
-    # LICHENS (Lecanoromycetes = main lichen class)
+    # LICHENS (Lecanoromycetes + Eurotiomycetes = main lichen groups)
     # -------------------------
     {
         "label": "lichens",
-        "taxon_ids": [54743],  # Lecanoromycetes
+        "taxon_ids": [54743, 117868, 121092],   # combined into ONE list
         "top_n": 30,
     },
-    # -------------------------
+
+   # -------------------------
     # MAMMALS
     # -------------------------
     {
@@ -117,7 +119,7 @@ TAXA_CONFIG = [
         "top_n": 50,
     },
     # -------------------------
-    # FUNGI
+    # FUNGI + LICHENS
     # -------------------------
     {
         "label": "fungi",
@@ -227,7 +229,9 @@ def fetch_species_counts(
 
 def fetch_taxon_details(taxon_ids: List[int]) -> Dict[int, Dict[str, Any]]:
     """
-    Fetch full taxon info (including ancestors with family) for a list of taxon IDs.
+    Fetch full taxon info (including ancestors with class, order, family) for a
+    list of taxon IDs.
+
     Uses /v1/taxa/<ids> and returns a dict taxonId -> taxon object.
 
     Batches in chunks to avoid URL length issues.
@@ -353,9 +357,13 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
         scientificName (species),
         swedishName,
         genusName,
-        familyName (Latin),
+        familyName (Latin, for backwards compatibility),
         familyScientificName (Latin),
         familySwedishName (if available),
+        orderScientificName (if available),
+        orderSwedishName (if available),
+        classScientificName (if available),
+        classSwedishName (if available),
         rank,
         taxonId,
         obsCount,
@@ -397,7 +405,7 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
 
     print(f"  Keeping top {len(top_species)} species for {label}")
 
-    # Enrich with full taxonomy (ancestors incl. family) using /v1/taxa
+    # Enrich with full taxonomy (ancestors incl. class/order/family) using /v1/taxa
     taxon_ids_list = [
         e["taxon"]["id"] for e in top_species if e["taxon"].get("id") is not None
     ]
@@ -418,18 +426,28 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
         sw = taxon.get("preferred_common_name")
         genus_name = sci.split(" ")[0]
 
-        # Use enriched taxon if available (for ancestors/family)
+        # Use enriched taxon if available (for ancestors)
         enriched = tax_details.get(tid, taxon)
         ancestors = enriched.get("ancestors") or []
 
         family_scientific_name: Optional[str] = None
         family_swedish_name: Optional[str] = None
+        order_scientific_name: Optional[str] = None
+        order_swedish_name: Optional[str] = None
+        class_scientific_name: Optional[str] = None
+        class_swedish_name: Optional[str] = None
 
         for anc in ancestors:
-            if anc.get("rank") == "family":
+            rank = anc.get("rank")
+            if rank == "family" and family_scientific_name is None:
                 family_scientific_name = anc.get("name")
                 family_swedish_name = anc.get("preferred_common_name")
-                break
+            elif rank == "order" and order_scientific_name is None:
+                order_scientific_name = anc.get("name")
+                order_swedish_name = anc.get("preferred_common_name")
+            elif rank == "class" and class_scientific_name is None:
+                class_scientific_name = anc.get("name")
+                class_swedish_name = anc.get("preferred_common_name")
 
         print(f"  Fetching example observation for {sci} (taxon_id={tid})...")
         example_obs = fetch_example_observation_for_species(tid)
@@ -448,6 +466,11 @@ def build_group_vocab_multi_taxa_species(label: str, taxon_ids: List[int], top_n
                 # New explicit family fields:
                 "familyScientificName": family_scientific_name,
                 "familySwedishName": family_swedish_name,
+                # New order + class fields:
+                "orderScientificName": order_scientific_name,
+                "orderSwedishName": order_swedish_name,
+                "classScientificName": class_scientific_name,
+                "classSwedishName": class_swedish_name,
                 "rank": enriched.get("rank"),
                 "taxonId": tid,
                 "obsCount": entry["count"],

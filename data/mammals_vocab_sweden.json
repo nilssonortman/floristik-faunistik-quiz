@@ -6,15 +6,19 @@
     "familyName": "Cervidae",
     "familyScientificName": "Cervidae",
     "familySwedishName": "hjortdjur",
+    "orderScientificName": "Artiodactyla",
+    "orderSwedishName": "partåiga hovdjur",
+    "classScientificName": "Mammalia",
+    "classSwedishName": "Däggdjur",
     "rank": "species",
     "taxonId": 42184,
-    "obsCount": 1576,
+    "obsCount": 1577,
     "exampleObservation": {
-      "obsId": 328452748,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/595180375/large.jpg",
-      "observer": "aalbertrebergen",
-      "licenseCode": "cc-by",
-      "obsUrl": "https://www.inaturalist.org/observations/328452748"
+      "obsId": 328544519,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/595368665/large.jpg",
+      "observer": "elias_putzhammer",
+      "licenseCode": "cc-by-nc",
+      "obsUrl": "https://www.inaturalist.org/observations/328544519"
     }
   },
   {
@@ -24,339 +28,19 @@
     "familyName": "Sciuridae",
     "familyScientificName": "Sciuridae",
     "familySwedishName": "ekorrar",
+    "orderScientificName": "Rodentia",
+    "orderSwedishName": "gnagare",
+    "classScientificName": "Mammalia",
+    "classSwedishName": "Däggdjur",
     "rank": "species",
     "taxonId": 46001,
-    "obsCount": 1404,
+    "obsCount": 1405,
     "exampleObservation": {
-      "obsId": 328228627,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594730931/large.jpg",
-      "observer": "elias_putzhammer",
+      "obsId": 328536471,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/595351971/large.jpg",
+      "observer": "derf098",
       "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328228627"
-    }
-  },
-  {
-    "scientificName": "Alces alces",
-    "swedishName": "Älg",
-    "genusName": "Alces",
-    "familyName": "Cervidae",
-    "familyScientificName": "Cervidae",
-    "familySwedishName": "hjortdjur",
-    "rank": "species",
-    "taxonId": 522193,
-    "obsCount": 1088,
-    "exampleObservation": {
-      "obsId": 328391046,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/595054896/large.jpg",
-      "observer": "tt2019",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328391046"
-    }
-  },
-  {
-    "scientificName": "Lepus europaeus",
-    "swedishName": "Fälthare",
-    "genusName": "Lepus",
-    "familyName": "Leporidae",
-    "familyScientificName": "Leporidae",
-    "familySwedishName": "harar och kaniner",
-    "rank": "species",
-    "taxonId": 43128,
-    "obsCount": 868,
-    "exampleObservation": {
-      "obsId": 328319578,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594914602/large.jpg",
-      "observer": "tim-tas",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328319578"
-    }
-  },
-  {
-    "scientificName": "Rangifer tarandus",
-    "swedishName": "ren",
-    "genusName": "Rangifer",
-    "familyName": "Cervidae",
-    "familyScientificName": "Cervidae",
-    "familySwedishName": "hjortdjur",
-    "rank": "species",
-    "taxonId": 42199,
-    "obsCount": 583,
-    "exampleObservation": {
-      "obsId": 326962584,
-      "photoUrl": "https://static.inaturalist.org/photos/592264241/large.jpg",
-      "observer": "scdjonas",
-      "licenseCode": null,
-      "obsUrl": "https://www.inaturalist.org/observations/326962584"
-    }
-  },
-  {
-    "scientificName": "Erinaceus europaeus",
-    "swedishName": "igelkott",
-    "genusName": "Erinaceus",
-    "familyName": "Erinaceidae",
-    "familyScientificName": "Erinaceidae",
-    "familySwedishName": "igelkottdjur",
-    "rank": "species",
-    "taxonId": 43042,
-    "obsCount": 568,
-    "exampleObservation": {
-      "obsId": 326240270,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/590823010/large.jpg",
-      "observer": "camillacam",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/326240270"
-    }
-  },
-  {
-    "scientificName": "Oryctolagus cuniculus",
-    "swedishName": "Vildkanin",
-    "genusName": "Oryctolagus",
-    "familyName": "Leporidae",
-    "familyScientificName": "Leporidae",
-    "familySwedishName": "harar och kaniner",
-    "rank": "species",
-    "taxonId": 43151,
-    "obsCount": 457,
-    "exampleObservation": {
-      "obsId": 328075090,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594425399/large.jpg",
-      "observer": "elias_putzhammer",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328075090"
-    }
-  },
-  {
-    "scientificName": "Vulpes vulpes",
-    "swedishName": "Rödräv",
-    "genusName": "Vulpes",
-    "familyName": "Canidae",
-    "familyScientificName": "Canidae",
-    "familySwedishName": "hunddjur",
-    "rank": "species",
-    "taxonId": 42069,
-    "obsCount": 423,
-    "exampleObservation": {
-      "obsId": 327826574,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/593965914/large.jpg",
-      "observer": "nangle",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/327826574"
-    }
-  },
-  {
-    "scientificName": "Dama dama",
-    "swedishName": "Dovhjort",
-    "genusName": "Dama",
-    "familyName": "Cervidae",
-    "familyScientificName": "Cervidae",
-    "familySwedishName": "hjortdjur",
-    "rank": "species",
-    "taxonId": 42161,
-    "obsCount": 313,
-    "exampleObservation": {
-      "obsId": 328335270,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594944587/large.jpg",
-      "observer": "lizamast",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328335270"
-    }
-  },
-  {
-    "scientificName": "Castor fiber",
-    "swedishName": "europeisk bäver",
-    "genusName": "Castor",
-    "familyName": "Castoridae",
-    "familyScientificName": "Castoridae",
-    "familySwedishName": "bävrar",
-    "rank": "species",
-    "taxonId": 43793,
-    "obsCount": 306,
-    "exampleObservation": {
-      "obsId": 327817277,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/593947109/large.jpg",
-      "observer": "tim-tas",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/327817277"
-    }
-  },
-  {
-    "scientificName": "Sus scrofa",
-    "swedishName": "Vildsvin",
-    "genusName": "Sus",
-    "familyName": "Suidae",
-    "familyScientificName": "Suidae",
-    "familySwedishName": "äkta svin",
-    "rank": "species",
-    "taxonId": 42134,
-    "obsCount": 184,
-    "exampleObservation": {
-      "obsId": 327962715,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594209960/large.jpg",
-      "observer": "tim-tas",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/327962715"
-    }
-  },
-  {
-    "scientificName": "Lepus timidus",
-    "swedishName": "Skogshare",
-    "genusName": "Lepus",
-    "familyName": "Leporidae",
-    "familyScientificName": "Leporidae",
-    "familySwedishName": "harar och kaniner",
-    "rank": "species",
-    "taxonId": 55908,
-    "obsCount": 184,
-    "exampleObservation": {
-      "obsId": 324678659,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/587707377/large.jpg",
-      "observer": "dactimus_glomerata",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/324678659"
-    }
-  },
-  {
-    "scientificName": "Phoca vitulina",
-    "swedishName": "Knubbsäl",
-    "genusName": "Phoca",
-    "familyName": "Phocidae",
-    "familyScientificName": "Phocidae",
-    "familySwedishName": "öronlösa sälar",
-    "rank": "species",
-    "taxonId": 41708,
-    "obsCount": 176,
-    "exampleObservation": {
-      "obsId": 328474630,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/595228113/large.jpg",
-      "observer": "martinr92",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328474630"
-    }
-  },
-  {
-    "scientificName": "Meles meles",
-    "swedishName": "Grävling",
-    "genusName": "Meles",
-    "familyName": "Mustelidae",
-    "familyScientificName": "Mustelidae",
-    "familySwedishName": "mårddjur",
-    "rank": "species",
-    "taxonId": 855297,
-    "obsCount": 173,
-    "exampleObservation": {
-      "obsId": 327301412,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/592937960/large.jpg",
-      "observer": "martinbergman",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/327301412"
-    }
-  },
-  {
-    "scientificName": "Sorex araneus",
-    "swedishName": "vanlig näbbmus",
-    "genusName": "Sorex",
-    "familyName": "Soricidae",
-    "familyScientificName": "Soricidae",
-    "familySwedishName": "näbbmöss",
-    "rank": "species",
-    "taxonId": 46414,
-    "obsCount": 160,
-    "exampleObservation": {
-      "obsId": 316913291,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/572621273/large.jpg",
-      "observer": "axel_gud",
-      "licenseCode": "cc-by",
-      "obsUrl": "https://www.inaturalist.org/observations/316913291"
-    }
-  },
-  {
-    "scientificName": "Neogale vison",
-    "swedishName": "mink",
-    "genusName": "Neogale",
-    "familyName": "Mustelidae",
-    "familyScientificName": "Mustelidae",
-    "familySwedishName": "mårddjur",
-    "rank": "species",
-    "taxonId": 1264432,
-    "obsCount": 125,
-    "exampleObservation": {
-      "obsId": 328353818,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594977274/large.jpg",
-      "observer": "finn_klessmann",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328353818"
-    }
-  },
-  {
-    "scientificName": "Rattus norvegicus",
-    "swedishName": "Brunråtta",
-    "genusName": "Rattus",
-    "familyName": "Muridae",
-    "familyScientificName": "Muridae",
-    "familySwedishName": "råttdjur",
-    "rank": "species",
-    "taxonId": 44576,
-    "obsCount": 119,
-    "exampleObservation": {
-      "obsId": 325687036,
-      "photoUrl": "https://static.inaturalist.org/photos/589720555/large.jpg",
-      "observer": "zacharias_bjorngren",
-      "licenseCode": null,
-      "obsUrl": "https://www.inaturalist.org/observations/325687036"
-    }
-  },
-  {
-    "scientificName": "Halichoerus grypus",
-    "swedishName": "gråsäl",
-    "genusName": "Halichoerus",
-    "familyName": "Phocidae",
-    "familyScientificName": "Phocidae",
-    "familySwedishName": "öronlösa sälar",
-    "rank": "species",
-    "taxonId": 41733,
-    "obsCount": 92,
-    "exampleObservation": {
-      "obsId": 328228460,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/594730414/large.jpg",
-      "observer": "lizamast",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/328228460"
-    }
-  },
-  {
-    "scientificName": "Clethrionomys glareolus",
-    "swedishName": "Skogssork",
-    "genusName": "Clethrionomys",
-    "familyName": "Cricetidae",
-    "familyScientificName": "Cricetidae",
-    "familySwedishName": "sorkartade gnagare",
-    "rank": "species",
-    "taxonId": 1431273,
-    "obsCount": 76,
-    "exampleObservation": {
-      "obsId": 321069459,
-      "photoUrl": "https://static.inaturalist.org/photos/580603242/large.jpg",
-      "observer": "josefinej",
-      "licenseCode": "cc-by-nd",
-      "obsUrl": "https://www.inaturalist.org/observations/321069459"
-    }
-  },
-  {
-    "scientificName": "Apodemus flavicollis",
-    "swedishName": "större skogsmus",
-    "genusName": "Apodemus",
-    "familyName": "Muridae",
-    "familyScientificName": "Muridae",
-    "familySwedishName": "råttdjur",
-    "rank": "species",
-    "taxonId": 45550,
-    "obsCount": 64,
-    "exampleObservation": {
-      "obsId": 325838336,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/590024899/large.jpg",
-      "observer": "thewhitepoppy",
-      "licenseCode": "cc-by-nc",
-      "obsUrl": "https://www.inaturalist.org/observations/325838336"
+      "obsUrl": "https://www.inaturalist.org/observations/328536471"
     }
   }
 ]
